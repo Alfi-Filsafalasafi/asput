@@ -1,0 +1,342 @@
+*{
+    font-family: "Baskervville", serif;;
+}
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+
+}
+.bg-first{
+    background: #D0BCB1;
+}
+.bg-second{
+    background: #664242;
+}
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-visible {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.nav-link{
+    color: #664242;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #3b2626;
+    font-weight: 500;
+}
+.navbar-toggler {
+    border: none; /* Hilangkan garis */
+    box-shadow: none; /* Hilangkan bayangan */
+    border-radius: 0; /* Hilangkan radius */
+    padding: 0; /* Hilangkan padding bawaan untuk tampilan rapi */
+    background-color: transparent; /* Pastikan latar belakang tombol transparan */
+  }
+  .navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none; /* Hilangkan garis fokus */
+  box-shadow: none; /* Hilangkan efek bayangan saat diklik */
+  border: none; /* Pastikan tidak ada garis */
+}
+.text-link{
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    color: #664242;
+    text-decoration: none;
+}
+.text-link2{
+    text-decoration: none;
+    color: #E9DCD6;
+}
+
+
+.font-utama{
+    font-family: "Baskervville", serif;
+}
+
+.search-input{
+    background-color: transparent;
+    border: none;
+    color: white; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+}
+.search-input:focus, .search-input:active{
+    background-color: transparent;
+    border: none;
+    color: white; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+    box-sizing: none;
+  box-shadow: none;
+}
+.search-input::placeholder{
+    color: #E9DCD6;
+}
+
+.search-input2{
+    background-color: transparent;
+    border: none;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+}
+.search-input2:focus, .search-input2:active{
+    background-color: transparent;
+    border: none;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+    box-sizing: none;
+  box-shadow: none;
+}
+.search-input2::placeholder{
+    color: #664242;
+}
+
+.menu-dashboard a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.btn-first{
+    background: #E9DCD6;
+    color: #664242;
+    font-family: "Inter", sans-serif;
+    border-radius: 0;
+    font-size: 11px;
+}
+.btn-first:hover{
+    background: #cfa795;
+    color: #664242;
+    font-family: "Inter", sans-serif;
+    border-radius: 0;
+    font-size: 11px;
+}
+#newThisWeek h1{
+    font-size: 55px;
+    font-family: "Mrs Saint Delafield", cursive;
+}
+#newThisWeek p{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+.btn-wa:hover{
+    background: #cfa795;
+}
+
+#whatAre h1{
+    font-size: 55px;
+    font-family: "Mrs Saint Delafield", cursive;
+}
+#blog h6{
+    line-height: 25px;
+    margin-top: 12px;
+}
+#blog p{
+    font-family: "Inter", sans-serif;
+    font-size:12px;
+}
+#blog a{
+    font-size:12px;
+    font-family: "Inter", sans-serif;
+    color: #746770;
+}
+
+footer{
+    padding-top: 54px;
+    background: #746770;
+}
+footer p{
+    font-size:12px;
+    font-family: "Inter", sans-serif;
+    
+}
+footer h6{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 22px;
+}
+footer a{
+    font-size:12px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #E9DCD6;
+    margin-top: 20px;
+}
+.input-newsletter{
+    font-family: "Inter", sans-serif;
+font-size:12px;
+}
+.btn-subscribe{
+    background: #E9DCD6;
+    color: #664242;
+    font-family: "Inter", sans-serif;
+font-size:12px;
+    border-radius: 50px;
+    padding: 13px 55px ;
+}
+
+.color1{
+color: #664242;
+}
+.color2{
+    color: #746770;
+}
+
+#detail span{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin-right: 10px;
+}
+#detail p{
+    border: 1px solid #746770;
+    padding: 22px;
+}
+
+#pilihan span{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin-right: 10px;
+}
+#pilihan h6{
+    font-family: "Inter", sans-serif;
+color: #664242;
+}
+
+#pilihan .nav-link{
+    font-family: "Inter", sans-serif;
+color: #746770;
+font-weight: 400;
+font-size: 12px;
+margin-top: 7px;
+}
+
+.form-select{
+    border: 1px solid #746770;
+    border-radius: 0;
+    padding: 12px;
+    box-shadow: none;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: #746770;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  .color-black { background-color: black; }
+  .color-blue { background-color: lightblue; }
+  .color-brown { background-color: brown; }
+  .color-cream { background-color: #fdf5e6; }
+  .color-gold { background-color: gold; }
+  .color-green { background-color: olive; }
+  .color-grey { background-color: grey; }
+  .color-pink { background-color: pink; }
+  .color-purple { background-color: purple; }
+  .color-red { background-color: red; }
+  .color-white { background-color: white; }
+  .color-yellow { background-color: yellow; }
+  .color-text{
+    color: #746770;
+font-size: 12px;
+font-weight: 400;
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .pagination-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #746770;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    
+    text-decoration: none;
+  }
+  .pagination-item.active {
+    background-color: #cbb4a8;
+    font-weight: bold;
+  }
+  .pagination-item:hover {
+    background-color: #dfc5b5;
+  }
+
+  .form-input {
+    background-color: transparent;
+    border: 1px solid #746770;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;    font-family: "Inter", sans-serif;
+    padding: 16px 27px;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
+.form-input:focus, .form-input:active{
+    background-color: transparent;
+    border: 1px solid #746770;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+    box-sizing: none;
+  box-shadow: none;
+}
+
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+  }
+  .quantity-selector button {
+    width: 40px;
+    height: 40px;
+    background-color: #746770; /* Purple shade */
+    color: #E9DCD6;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .quantity-selector input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #746770;
+    border-radius: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-family: "Inter", sans-serif;
+    height: 40px;
+  }
+  .add-to-cart {
+    background-color: #D0BCB1; /* Beige shade */
+    color: #664242; /* Text color */
+    border: none;
+    padding: 14px 45px;
+    border-radius: 50px;
+    font-family: "Inter", sans-serif;
+font-size: 12px;
+
+}
