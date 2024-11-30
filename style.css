@@ -104,7 +104,18 @@
     margin-left: 20px;
     font-size: 13px;
 }
-
+.menu-dashboard a:active{
+    color:white;
+}
+.menu-dashboard a:hover{
+    color:white;
+}
+.menu-dashboard a.dropdown-item{
+    color: #3b2626;
+}
+.menu-dashboard a.dropdown-item:hover{
+    background: transparent;
+}
 .btn-first{
     background: #E9DCD6;
     color: #664242;
@@ -340,3 +351,71 @@ font-weight: 400;
 font-size: 12px;
 
 }
+
+.content-blog *{
+    font-family: "Inter", sans-serif;
+}
+.content-blog p {
+    font-size: 12px;
+    color: #746770;
+    line-height: 18px;
+}
+.content-blog h5{
+    margin-top: 29px;
+    color: #664242;
+}
+.content-blog label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.content-blog li{
+    font-size: 12px;
+    color: #746770;
+}
+#auth *{
+    font-family: "Inter", sans-serif;
+
+}
+#auth p{
+    color: #746770;
+    font-size: 13px;
+}
+
+#auth span{
+    color: #746770;
+    font-size: 11px;
+}
+
+#auth label{
+    font-family: "Inter", sans-serif;
+
+font-size: 12px;
+font-weight: 500;
+color: #746770;
+
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0px;
+    accent-color: brown !important;
+    border: 1px solid #746770;
+    color: #3b2626;
+}
+.form-check-input:checked {
+    background-color: #3b2626; 
+    border-color: #3b2626; 
+  }
+
+
+  .btn-submit {
+padding: 8px 51px 8px 51px;
+gap: 10px;
+opacity: 0px;
+background: #D0BCB1;
+border-radius: 0;
+color: #664242;
+  }
+
+  .dropdown-item:active{
+background: #664242;
+
+  }
