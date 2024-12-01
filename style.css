@@ -1,5 +1,5 @@
 *{
-    font-family: "Baskervville", serif;;
+    font-family: "Baskervville", serif;
 }
 
 .font-inter{
@@ -415,7 +415,157 @@ border-radius: 0;
 color: #664242;
   }
 
+  .btn-submit:hover{
+    background: #cbb4a8;
+  }
+
   .dropdown-item:active{
 background: #664242;
 
   }
+
+  #cart *{
+    font-family: "Inter", sans-serif;
+  }
+
+  #cart table {
+    font-size: 14px;
+  }
+  #cart button {
+    font-size: 14px;
+  }
+  .card h5{
+    color: #664242;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .card .col-5 {
+    color: #664242;
+    font-size: 14px;
+    font-weight: 600; 
+  }
+
+  .card {
+    border: 1px solid #664242;
+  }
+  #va_pembayaran *{
+    font-family: "Inter", sans-serif;
+  }
+
+
+  .form-copy {
+    background-color: transparent;
+    border: 1px solid #3b2626;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;    font-family: "Inter", sans-serif;
+    padding: 12px 25px;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
+.form-copy:focus, .form-copy:active{
+    background-color: transparent;
+    border: 1px solid #746770;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+    box-sizing: none;
+  box-shadow: none;
+}
+
+.btn-va{
+    padding: 17px 51px 17px 51px;
+gap: 10px;
+opacity: 0px;
+background: #664242;
+color: white;
+}
+
+.btn-va:hover{
+    background: #664242;
+    color: white;
+}
+
+.disabled-link {
+    pointer-events: none; /* Mematikan klik */
+    opacity: 0.5; /* Mengurangi kejelasan */
+    cursor: not-allowed; /* Ubah cursor */
+  }
+
+  #payment li {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  /* Ketika layar sm (576px) atau lebih kecil */
+  @media (max-width: 576px) {
+    .profile-img {
+      width: 100px;
+      height: 90px;
+    }
+  }
+
+  .profile *{
+    font-family: "Inria Serif", serif;
+  }
+
+  .btn-outline-profile {
+padding: 8px 17px 8px 17px;
+gap: 10px;
+border-radius: 15px;
+border: 1px solid #3b2626;
+opacity: 0px;
+outline: none;    font-family: "Inter", sans-serif;
+font-size: 13px;
+margin-left: 20px;
+  }
+
+  .btn-outline-profile:active, .btn-outline-profile:focus{
+    border: 1px solid #3b2626;
+  }
+  .btn-outline-profile:hover{
+    border: 1px solid #3b2626;
+    background: #cbb4a8;
+  }
+
+  .btn-order {
+    opacity: 0px;
+    background: #D0BCB1;
+    border-radius: 0;
+    color: #664242;
+    font-family: "Inter", sans-serif;
+    font-size: 12px    ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+      }
+
+      .btn-order:hover{
+        background: #cbb4a8;
+      }
+
+.btn-pay, .btn-pay:hover, .btn-pay:active{
+padding: 12px 25px;
+border-radius: 5px;
+opacity: 0px;
+background: #664242;
+color: white;
+font-family: "Inter", sans-serif;
+font-size: 12px;
+}
+
+#profile h1{
+    font-family: "Mrs Saint Delafield", cursive;
+    font-size: 55px;
+}
+#profile p{
+    font-size: 13px;
+}

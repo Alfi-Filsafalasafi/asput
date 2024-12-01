@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asput</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+    class="navbar navbar-expand-lg bg-first pb-3 pb-md-0 navbar-hidden fixed-top"
+  >
+    <div class="container">
+      <a class="navbar-brand p-0 order-0" href="#">
+        <a href="index_login.html"
+          ><img src="img/logo.png" alt="" srcset=""
+        /></a>
+      </a>
+      <div class="d-flex order-1 order-lg-3">
+        <a href=""><img src="icon/favorit.png" height="29" alt="" /></a>
+        <span class="text-link mx-3" style="font-size: 17px">|</span>
+        <a href=""><img src="icon/circum_user.png" alt="" srcset="" /></a>
+        <span class="text-link mx-3" style="font-size: 17px">|</span>
+        <div class="position-relative">
+          <!-- Cart Icon -->
+          <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+          <!-- Badge for item count -->
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge text-link"
+          >
+            0
+          </span>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler order-2 order-lg-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img src="icon/hamburger.png" alt="" srcset="" />
+      </button>
+      <div
+        class="collapse navbar-collapse order-3 order-lg-1"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-0 mx-md-3">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="news_login.html"
+              >NEW</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              HIJABS
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="square_login.html">SQUARE</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="inner_login.html">INNER</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mukena_login.html">MUKENA</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item mx-0 mx-md-3">
+            <a class="nav-link" href="clothing_login.html">CLOTHINGS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ACCESSORIES
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="bags_login.html">BAGS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="sunglasses_login.html"
+                  >SUNGLASSES</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item mx-0 mx-md-3">
+            <a class="nav-link" href="blog_login.html">BLOG</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section id="navbar-2" class="">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- User -->
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input2"
+                placeholder="Search"
+              />
+              <div class="input-group-append d-flex align-items-center pe-3">
+                <img
+                  src="icon/search-line2.png"
+                  width="15"
+                  height="14"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-6 text-center d-none d-md-block">
+                        <a href="index_login.html"><img src="img/logo-set-dark.png" alt="" /></a>
+
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
+            <div class="d-flex align-items-center order-1 order-lg-3">
+              <a href=""
+                ><img src="icon/favorit_dark.png" height="29" alt=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <a href=""
+                ><img src="icon/circum_user_dark.png" alt="" srcset=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <div class="position-relative">
+                <!-- Cart Icon -->
+                <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+                <!-- Badge for item count -->
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge text-link"
+                >
+                  0
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block">
+          <div
+            class="d-flex menu-dashboard justify-content-center pt-5"
+            style="gap: 40px"
+          >
+                        <a href="news_login.html" style="color: #664242">NEW</a>
+
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+style="color: #664242"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HIJABS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+                </li>
+                <li><a class="dropdown-item" href="square_login.html">SQUARE</a></li>
+                <li><a class="dropdown-item" href="inner_login.html">INNER</a></li>
+                <li><a class="dropdown-item" href="mukena_login.html">MUKENA</a></li>
+              </ul>
+            </div>
+            <a href="clothing_login.html" style="color: #664242">CLOTHINGS</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link"
+                style="color: #664242"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="bags_login.html">BAGS</a></li>
+                <li>
+                  <a class="dropdown-item" href="sunglasses_login.html">SUNGLASSES</a>
+                </li>
+              </ul>
+            </div>
+            <a href="blog_login.html" style="color: #664242">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <section id="" class="py-md-5 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center mb-5">HOW TO ORDER</h2>
+          <div class="col-md-9 col-lg-7 content-blog">
+            <label
+              >Scope of the Privacy Policy / Lingkup Kebijakan Privasi</label
+            >
+            <p class="deskripsi">
+              This Privacy Policy sets out how to protect and use the
+              information you provide when using this site's services. We are
+              committed to ensuring that your privacy is protected. If we ask
+              you to provide certain identifiable information when using this
+              website, that information will only be used in accordance with
+              this privacy statement. <br /><br />Kebijakan Privasi ini
+              menetapkan cara melindungi dan menggunakan informasi yang Anda
+              berikan ketika menggunakan layanan situs ini. Kami berkomitmen
+              untuk memastikan bahwa privasi Anda dilindungi. Bila Kami meminta
+              Anda untuk memberikan informasi tertentu yang dapat diidentifikasi
+              ketika menggunakan website ini, maka informasi tersebut itu hanya
+              akan digunakan sesuai dengan pernyataan privasi ini. <br />
+              <br />
+              <br />
+              We may change this Privacy Policy from time to time by reducing or
+              adding provisions on this page. We will announce changes to this
+              policy through Lafiye.com. You are expected to check this page
+              periodically so that you are aware of these changes. By continuing
+              to access and use the services on this Lafiye.com site, you are
+              deemed to have agreed to the changes to the terms of this Privacy
+              Policy. <br />
+              <br />Kami dapat mengubah Kebijakan Privasi ini dari waktu ke
+              waktu dengan melakukan pengurangan ataupun penambahan ketentuan
+              pada halaman ini. Perubahan terhadap kebijakan ini akan Kami
+              umumkan melalui Lafiye.com. Anda diharapkan untuk memeriksa
+              halaman ini secara berkala agar Anda mengetahui
+              perubahan-perubahan tersebut. Dengan tetap mengakses dan
+              menggunakan layanan pada situs Lafiye.com ini, Anda dianggap telah
+              menyetujui perubahan-perubahan ketentuan pada Kebijakan Privasi
+              ini
+            </p>
+            <label for="">Registered Mail / Registrasi</label>
+            <p>
+              Everyone can access, view, and make transactions on the Lafiye.com
+              site, however, there are several promotional features and
+              facilities of this site that can only be enjoyed by members who
+              have registered (registered). <br /><br />Semua orang dapat
+              mengakses, melihat, dan melakukan transaksi di situs Lafiye.com,
+              namun ada beberapa fitur promosi dan fasilitas situs ini yang
+              hanya dapat dinikmati oleh anggota (member) yang telah melakukan
+              pendaftaran (registrasi). <br /><br />To register on the
+              Lafiye.com site, you must provide various information that we need
+              as listed below. <br /><br />Untuk mendaftar pada situs
+              Lafiye.com, Anda harus memberikan berbagai informasi yang Kami
+              perlukan sebagaimana tercantum di bawah ini.
+            </p>
+            <label for=""
+              >Information Required in The Website / Informasi yang Kami Minta
+              di Website</label
+            >
+            <p>
+              Information about identity that we voluntarily get from you
+              through the Lafiye.com is: <br /><br />Informasi mengenai
+              identitas diri yang Kami dapat secara sukarela dari Anda melalui
+              Lafiye.com adalah: <br />Your full name / Nama lengkap anda
+              <br />Email adress / alamat e-mail <br />Phone number / nomor
+              telepon <br />Shipping Address / alamat pengiriman <br /><br />We
+              assume that all the information and changes that you provide above
+              now, or in the future are accurate and true. If the information
+              and changes that you provide prove to be incorrect, then we hereby
+              declare that we are not responsible for any consequences that may
+              occur in connection with the provision of such incorrect
+              information and changes. <br /><br />Kami mengasumsikan bahwa
+              semua informasi dan perubahan-perubahan yang Anda berikan di atas
+              sekarang, atau di masa yang akan datang adalah akurat dan benar.
+              Apabila informasi dan perubahan-perubahan yang Anda berikan
+              tersebut ternyata terbukti tidak benar, maka dengan ini Kami
+              menyatakan tidak bertanggung jawab atas segala akibat yang dapat
+              terjadi sehubungan dengan pemberian informasi dan
+              perubahan-perubahan yang tidak benar tersebut.
+            </p>
+            <label for=""
+              >What we do with the information collected <br /><br />Apa yang
+              kami lakukan dengan informasi yang dikumpulkan</label
+            >
+            <p>
+              We need the information as stated above to: <br><br>Kami memerlukan
+              informasi sebagaimana tersebut di atas untuk: <ul>
+                <li>Order
+                  confirmation. / Konfirmasi pesanan.</li>
+                  <li>Sending orders. / Mengirim
+                    pesanan.</li>
+                  <li>The interest of payment transactions. / Kepentingan
+                    transaksi pembayaran.</li>
+                  <li>Provide information or send promotional
+                    emails periodically to you for interesting offers or promotion of
+                    new products, and other information that we think you need on
+                    Lafiye.com. / Memberikan informasi atau mengirimkan email promosi
+                    secara berkala kepada Anda bila terdapat suatu penawaran menarik
+                    atau promosi atas produk-produk baru, serta informasi lain yang
+                    Kami pikir Anda perlukan di Lafiye.com</li>
+                    <li>Our internal or
+                      administrative records. / Catatan internal atau administrasi kami.</li>
+              </ul> 
+            </p>
+            <label for="">Security / Keamanan</label>
+            <p>We are committed to ensuring that the information you provide to us is safe. To prevent unauthorized access, we take physical, electronic, and managerial security measures necessary to protect your information that we collect online. <br><br>
+              Kami berkomitmen untuk memastikan bahwa informasi yang Anda berikan kepada Kami dalam keadaan aman. Untuk mencegah akses tidak sah, Kami melakukan tindakan pengamanan fisik, elektronik, dan prosedur manajerial yang diperlukan untuk melindungi informasi Anda yang Kami kumpulkan secara online.</p>
+          <label for="">We will not sell, distribute, or rent your personal information to third parties. <br><br>Kami tidak akan menjual, mendistribusikan, atau menyewakan informasi pribadi Anda kepada pihak ketiga</label>
+            </div>
+        </div>
+      </div>
+      <!-- Chat Me WhatsApp Button -->
+      <a
+        href="https://wa.me/6281234567890"
+        class="btn btn-wa bg-first position-absolute top-0 start-0 ms-3 d-flex align-items-center rounded-0"
+        target="_blank"
+        style="z-index: 1000; margin-top: 480px"
+      >
+        <img
+          src="icon/ic_baseline-whatsapp.png"
+          class="me-2 nav-link"
+          alt="WhatsApp Icon"
+          style="height: 20px"
+        />
+        Chat
+      </a>
+    </section>
+    <!-- end content -->
+
+    <!-- Footer -->
+    <footer class="text-light">
+      <div class="container">
+        <div class="row justify-content-evenly g-4" style="margin-bottom: 90px">
+          <div class="col-md-5">
+            <h6>@ASPUT</h6>
+            <p>
+              Asput is a brand that treasures minimalism because we believe that
+              one is actually doing more with less. We believe that versatility
+              is a way to heighten fashion game, and with that being said, we
+              provide our dearest customers with versatile staples to encourage
+              them to cultivate their beauty with.  
+            </p>
+            <p>
+              What we wear defines our kind of beauty. Let your own beauty
+              speaks its language, by wearing Asput.  
+            </p>
+            <p>“Cultivate Beauty in Versatility.”</p>
+          </div>
+          <div class="col-md-2">
+            <h6>HELP</h6>
+             <a href="how_to_order_login.html" class="d-block">How to Order</a>
+<a href="terms_login.html" class="d-block">Terms and Conditions</a>            <a href="privacy_polici_login.html" class="d-block">Privacy Policy</a>
+            <a href="faq_login.html" class="d-block">FAQs</a>
+            <a href="contact_login.html" class="d-block">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h6>NEWSLETTER</h6>
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input px-0 input-newsletter"
+                placeholder="Your Email Adress"
+              />
+            </div>
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="text-center pb-3">
+          <p>ASPUT</p>
+          <p>Copyright 2024. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

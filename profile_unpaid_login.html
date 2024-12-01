@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asput</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-first pb-3 pb-md-0 navbar-hidden fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand p-0 order-0" href="#">
+          <a href="index_login.html"
+            ><img src="img/logo.png" alt="" srcset=""
+          /></a>
+        </a>
+        <div class="d-flex order-1 order-lg-3">
+          <a href=""><img src="icon/favorit.png" height="29" alt="" /></a>
+          <span class="text-link mx-3" style="font-size: 17px">|</span>
+          <a href=""><img src="icon/circum_user.png" alt="" srcset="" /></a>
+          <span class="text-link mx-3" style="font-size: 17px">|</span>
+          <div class="position-relative">
+            <!-- Cart Icon -->
+            <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+            <!-- Badge for item count -->
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge text-link"
+            >
+              0
+            </span>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler order-2 order-lg-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="icon/hamburger.png" alt="" srcset="" />
+        </button>
+        <div
+          class="collapse navbar-collapse order-3 order-lg-1"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-0 mx-md-3">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="news_login.html"
+                >NEW</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HIJABS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="square_login.html">SQUARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="inner_login.html">INNER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mukena_login.html">MUKENA</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-0 mx-md-3">
+              <a class="nav-link" href="clothing_login.html">CLOTHINGS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bags_login.html">BAGS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sunglasses_login.html"
+                    >SUNGLASSES</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-0 mx-md-3">
+              <a class="nav-link" href="blog_login.html">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="navbar-2" class="">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- User -->
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input2"
+                placeholder="Search"
+              />
+              <div class="input-group-append d-flex align-items-center pe-3">
+                <img
+                  src="icon/search-line2.png"
+                  width="15"
+                  height="14"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-6 text-center d-none d-md-block">
+            <a href="index_login.html"
+              ><img src="img/logo-set-dark.png" alt=""
+            /></a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
+            <div class="d-flex align-items-center order-1 order-lg-3">
+              <a href=""
+                ><img src="icon/favorit_dark.png" height="29" alt=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <a href=""
+                ><img src="icon/circum_user_dark.png" alt="" srcset=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <div class="position-relative">
+                <!-- Cart Icon -->
+                <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+                <!-- Badge for item count -->
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge text-link"
+                >
+                  0
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block">
+          <div
+            class="d-flex menu-dashboard justify-content-center pt-5"
+            style="gap: 40px"
+          >
+            <a href="news_login.html" style="color: #664242">NEW</a>
+
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: #664242"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HIJABS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="square_login.html">SQUARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="inner_login.html">INNER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mukena_login.html">MUKENA</a>
+                </li>
+              </ul>
+            </div>
+            <a href="clothing_login.html" style="color: #664242">CLOTHINGS</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link"
+                style="color: #664242"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bags_login.html">BAGS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sunglasses_login.html"
+                    >SUNGLASSES</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="blog_login.html" style="color: #664242">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <section id="profile" class="mb-5 mb-md-0 py-md-2 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 order-2 order-md-1 mt-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/profile.png"
+                alt="Product Image"
+                class="rounded-circle profile-img"
+              />
+              <div class="d-block profile ms-4">
+                <h5>Dita Putri Adini</h5>
+                <label for="">ditaputriadini@gmail.com</label> <br />
+                <label for="">+62 853 3413 6433</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 order-1 order-md-2 text-end">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-outline-profile">
+                <img src="icon/ep_edit.png" alt="" /> Edit Profile
+              </button>
+              <button type="button" class="btn btn-outline-profile">
+                <img src="icon/logout.png" alt="" srcset="" /> Log out
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center mt-5">Shipping Adress</h1>
+        <hr style="margin-top: -20px" />
+        <div class="d-flex align-items-center justify-content-center my-5">
+          <img
+            src="icon/mynaui_location.png"
+            class="me-3"
+            width="29"
+            height="29"
+            alt=""
+            srcset=""
+          />
+          <p>
+            RANGKAH 7/34 RT/RW 004/001 KECAMATAN TAMBAKSARI, KELUARAHAN RANGKAH,
+            KOTA SURABAYA, JAWA TIMUR, INDONESIA
+          </p>
+        </div>
+        <div class="row g-2 justify-content-between">
+          <div class="col-sm-4 col-md-3">
+            <a href="" class="btn btn-order w-100">UNPAID ORDERS</a>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <a href="" class="btn btn-order w-100">PAID ORDERS</a>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <a href="" class="btn btn-order w-100">SHIPPED ORDERS</a>
+          </div>
+        </div>
+        <div class="card mt-3 px-4 py-5 my-5">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-block" id="card">
+              <label for="" class="d-block">Order #ORD001</label>
+              <span>2024-11-07</span>
+            </div>
+            <a href="" class="btn btn-pay">PAY NOW</a>
+          </div>
+          <div class="d-block my-4">
+            <label for="" class="d-block">PRIME CAPELET IN CHALK</label>
+            <span>Size S- M</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="d-block" id="card">
+              <small class="d-block">Payment Deadline</small>
+              <h4>2024-11-07 15:30</h4>
+            </div>
+            <div class="d-block" id="card">
+              <small class="d-block">Total Payment</small>
+              <h4>Rp 899.000</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chat Me WhatsApp Button -->
+      <a
+        href="https://wa.me/6281234567890"
+        class="btn btn-wa bg-first position-absolute top-0 start-0 ms-3 d-flex align-items-center rounded-0"
+        target="_blank"
+        style="z-index: 1000; margin-top: 580px"
+      >
+        <img
+          src="icon/ic_baseline-whatsapp.png"
+          class="me-2 nav-link"
+          alt="WhatsApp Icon"
+          style="height: 20px"
+        />
+        Chat
+      </a>
+    </section>
+    <!-- end content -->
+
+    <!-- Footer -->
+    <footer class="text-light">
+      <div class="container">
+        <div class="row justify-content-evenly g-4" style="margin-bottom: 90px">
+          <div class="col-md-5">
+            <h6>@ASPUT</h6>
+            <p>
+              Asput is a brand that treasures minimalism because we believe that
+              one is actually doing more with less. We believe that versatility
+              is a way to heighten fashion game, and with that being said, we
+              provide our dearest customers with versatile staples to encourage
+              them to cultivate their beauty with.  
+            </p>
+            <p>
+              What we wear defines our kind of beauty. Let your own beauty
+              speaks its language, by wearing Asput.  
+            </p>
+            <p>“Cultivate Beauty in Versatility.”</p>
+          </div>
+          <div class="col-md-2">
+            <h6>HELP</h6>
+            <a href="how_to_order_login.html" class="d-block">How to Order</a>
+            <a href="terms_login.html" class="d-block">Terms and Conditions</a>
+            <a href="privacy_polici_login.html" class="d-block"
+              >Privacy Policy</a
+            >
+            <a href="faq_login.html" class="d-block">FAQs</a>
+            <a href="contact_login.html" class="d-block">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h6>NEWSLETTER</h6>
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input px-0 input-newsletter"
+                placeholder="Your Email Adress"
+              />
+            </div>
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="text-center pb-3">
+          <p>ASPUT</p>
+          <p>Copyright 2024. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

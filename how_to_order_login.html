@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asput</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-first pb-3 pb-md-0 navbar-hidden fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand p-0 order-0" href="#">
+          <a href="index_login.html"
+            ><img src="img/logo.png" alt="" srcset=""
+          /></a>
+        </a>
+        <div class="d-flex order-1 order-lg-3">
+          <a href=""><img src="icon/favorit.png" height="29" alt="" /></a>
+          <span class="text-link mx-3" style="font-size: 17px">|</span>
+          <a href=""><img src="icon/circum_user.png" alt="" srcset="" /></a>
+          <span class="text-link mx-3" style="font-size: 17px">|</span>
+          <div class="position-relative">
+            <!-- Cart Icon -->
+            <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+            <!-- Badge for item count -->
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge text-link"
+            >
+              0
+            </span>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler order-2 order-lg-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="icon/hamburger.png" alt="" srcset="" />
+        </button>
+        <div
+          class="collapse navbar-collapse order-3 order-lg-1"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-0 mx-md-3">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="news_login.html"
+                >NEW</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HIJABS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="square_login.html">SQUARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="inner_login.html">INNER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mukena_login.html">MUKENA</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-0 mx-md-3">
+              <a class="nav-link" href="clothing_login.html">CLOTHINGS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bags_login.html">BAGS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sunglasses_login.html"
+                    >SUNGLASSES</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-0 mx-md-3">
+              <a class="nav-link" href="blog_login.html">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="navbar-2" class="">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- User -->
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input2"
+                placeholder="Search"
+              />
+              <div class="input-group-append d-flex align-items-center pe-3">
+                <img
+                  src="icon/search-line2.png"
+                  width="15"
+                  height="14"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-6 text-center d-none d-md-block">
+            <a href="index_login.html"
+              ><img src="img/logo-set-dark.png" alt=""
+            /></a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
+            <div class="d-flex align-items-center order-1 order-lg-3">
+              <a href=""
+                ><img src="icon/favorit_dark.png" height="29" alt=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <a href=""
+                ><img src="icon/circum_user_dark.png" alt="" srcset=""
+              /></a>
+              <span class="text-link mx-3" style="font-size: 17px">|</span>
+              <div class="position-relative">
+                <!-- Cart Icon -->
+                <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+                <!-- Badge for item count -->
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge text-link"
+                >
+                  0
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block">
+          <div
+            class="d-flex menu-dashboard justify-content-center pt-5"
+            style="gap: 40px"
+          >
+            <a href="news_login.html" style="color: #664242">NEW</a>
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: #664242"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HIJABS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="premium_login.html">PREMIUM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="instant_login.html">INSTANT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="square_login.html">SQUARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="inner_login.html">INNER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mukena_login.html">MUKENA</a>
+                </li>
+              </ul>
+            </div>
+            <a href="clothing_login.html" style="color: #664242">CLOTHINGS</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link"
+                style="color: #664242"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bags_login.html">BAGS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sunglasses_login.html"
+                    >SUNGLASSES</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="blog_login.html" style="color: #664242">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <section id="" class="py-md-5 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center mb-5">HOW TO ORDER</h2>
+          <div class="col-md-9 col-lg-7 content-blog">
+            <label>STEP 1</label>
+            <p class="deskripsi">
+              Choose the product and the quantity you wish to purchase,
+              click ADD TO CART.
+              <br />
+              <br />
+              Pilih product & jumlah yang ingin anda beli, lalu klik ADD TO CART
+            </p>
+            <label>STEP 2</label>
+            <p class="deskripsi">
+              Once you’re done picking the products to purchase, click the
+              shopping bag icon on top right, and click CHECKOUT.
+              <br /><br />
+              Setelah selesai memilih product yang ingin dibeli, klik gambar tas
+              di pojok kanan atas, lalu klik CHECKOUT.
+            </p>
+            <label>STEP 3</label>
+            <p class="deskripsi">
+              For customers that have registered before, please click LOG IN. If
+              you haven’t, please REGISTER.
+              <br /><br />
+              Untuk customer yang sudah pernah register sebelumnya, silahkan
+              langsung LOG IN, Untuk customer baru, anda dapat memilih REGISTER.
+            </p>
+            <label>STEP 4</label>
+            <p class="deskripsi">
+              Do a re-check before you follow the next steps. Check the “I have
+              read and agree” box to continue with the payment and your payment
+              ID number will appear. <br /><br />
+              Periksa kembali belanjaan anda, lalu ikuti langkah-langkah
+              selanjutnya. Terakhir,  klik dibox "I have read and agree" lalu
+              continue pembayaran. anda akan mendapatkan nomor id.
+            </p>
+            <label>STEP 5</label>
+            <p class="deskripsi">
+              Please check your e-mail for invoice details. To see the Payment
+              Detail, bank account to transfer to, click PAYMENT CONFIRMATION.
+              <br />
+              <br />  Silahkan cek e-mail anda untuk detail invoicenya, untuk
+              melihat Detail Payment, Rekening transfer, klik PAYMENT
+              CONFIRMATION
+            </p>
+            <label>STEP 6</label>
+            <p class="deskripsi">
+              Orders that have not been paid for within the specified time of 5
+              hours will be canceled automatically from our system. Please
+              immediately confirm your payment in PAYMENT CONFIRMATION if you
+              have paid. Upload your transaction evidence to speed up the
+              process. <br />
+              <br />
+              Pemesanan yang belum dibayarkan dalam waktu yang telah ditentukan
+              (5 jam) akan dibatalkan secara otomatis dari sistem kami. Harap
+              segera PAYMENT CONFIRMATION jika sudah lakukan transaksi. Sertakan
+              bukti transfer agar mempercepat proses.
+            </p>
+            <label for="">STEP 7</label>
+            <p class="deskripsi">
+              After the payment confirmation, we will check the incoming
+              transaction mutations within 1x24 hours. And our system will send
+              a notification via Email (to the email you registered at the time
+              of registration) when the payment has been received, your order
+              will be processed immediately and will be sent the next day. You
+              will get notification about information of your tracking
+              number/receipt. *Please check your junk / spam email if you don't
+              receive the notification email in your inbox. If you still haven’t
+              received the notification, please contact us. <br />
+              <br />
+              Setelah konfirmasi pembayaran, kami akan mengecek mutasi transaksi
+              yang masuk dalam 1x24jam. Dan sistem kami akan mengirimkan
+              notifikasi via Email (Ke email yang anda daftarkan pada saat
+              register) apabila payment/pembayaran sudah diterima, barang akan
+              segera diproses dan segera dikirim di hari berikutnya. Anda akan
+              mendapatkan notifikasi info tentang nomor tracking/resi
+              anda. *Harap cek di junk/spam email jika anda tidak menerima email
+              notifikasi tersebut di inbox. Jika masih belum mendapatkan
+              notifikasi tersebut anda dapat menghubungi kami.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Chat Me WhatsApp Button -->
+      <a
+        href="https://wa.me/6281234567890"
+        class="btn btn-wa bg-first position-absolute top-0 start-0 ms-3 d-flex align-items-center rounded-0"
+        target="_blank"
+        style="z-index: 1000; margin-top: 480px"
+      >
+        <img
+          src="icon/ic_baseline-whatsapp.png"
+          class="me-2 nav-link"
+          alt="WhatsApp Icon"
+          style="height: 20px"
+        />
+        Chat
+      </a>
+    </section>
+    <!-- end content -->
+
+    <!-- Footer -->
+    <footer class="text-light">
+      <div class="container">
+        <div class="row justify-content-evenly g-4" style="margin-bottom: 90px">
+          <div class="col-md-5">
+            <h6>@ASPUT</h6>
+            <p>
+              Asput is a brand that treasures minimalism because we believe that
+              one is actually doing more with less. We believe that versatility
+              is a way to heighten fashion game, and with that being said, we
+              provide our dearest customers with versatile staples to encourage
+              them to cultivate their beauty with.  
+            </p>
+            <p>
+              What we wear defines our kind of beauty. Let your own beauty
+              speaks its language, by wearing Asput.  
+            </p>
+            <p>“Cultivate Beauty in Versatility.”</p>
+          </div>
+          <div class="col-md-2">
+            <h6>HELP</h6>
+            <a href="how_to_order_login.html" class="d-block">How to Order</a>
+            <a href="terms_login.html" class="d-block">Terms and Conditions</a>
+            <a href="privacy_polici_login.html" class="d-block"
+              >Privacy Policy</a
+            >
+            <a href="faq_login.html" class="d-block">FAQs</a>
+            <a href="contact_login.html" class="d-block">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h6>NEWSLETTER</h6>
+            <div class="input-group border-bottom mb-3">
+              <input
+                type="text"
+                class="form-control search-input px-0 input-newsletter"
+                placeholder="Your Email Adress"
+              />
+            </div>
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="text-center pb-3">
+          <p>ASPUT</p>
+          <p>Copyright 2024. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

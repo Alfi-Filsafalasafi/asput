@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.querySelector(".navbar");
   
@@ -16,19 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  
-    const decrementBtn = document.getElementById('decrement');
-    const incrementBtn = document.getElementById('increment');
-    const quantityInput = document.getElementById('quantity');
 
+  
+  const decrementBtn = document.getElementById('decrement');
+  const incrementBtn = document.getElementById('increment');
+  const quantityInput = document.getElementById('quantity');
+  
+  if (decrementBtn && incrementBtn && quantityInput) {
     decrementBtn.addEventListener('click', () => {
       let currentValue = parseInt(quantityInput.value);
       if (currentValue > 1) {
         quantityInput.value = currentValue - 1;
       }
     });
-
+  
     incrementBtn.addEventListener('click', () => {
       let currentValue = parseInt(quantityInput.value);
       quantityInput.value = currentValue + 1;
     });
+  }
+  
+
+
+
+    
