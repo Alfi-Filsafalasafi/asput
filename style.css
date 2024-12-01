@@ -514,6 +514,20 @@ color: white;
     }
   }
 
+  .profile-img-edit {
+    width: 180px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  /* Ketika layar sm (576px) atau lebih kecil */
+  @media (max-width: 576px) {
+    .profile-img-edit {
+      width: 130px;
+      height: 120px;
+    }
+  }
+
   .profile *{
     font-family: "Inria Serif", serif;
   }
@@ -569,3 +583,12 @@ font-size: 12px;
 #profile p{
     font-size: 13px;
 }
+
+.edit_profile {
+    margin-top: 130px;
+  }
+@media (max-width: 576px) {
+    .edit_profile {
+      margin-top: 80px;
+    }
+  }

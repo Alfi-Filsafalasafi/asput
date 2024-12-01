@@ -22,10 +22,6 @@
       href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mrs+Saint+Delafield&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/logo.png" type="image/png" />
   </head>
@@ -260,88 +256,134 @@
       </div>
     </section>
     <!-- content -->
-    <section id="profile" class="mb-5 mb-md-0 py-md-2 position-relative">
+    <section id="auth" class="py-md-2 position-relative">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 order-2 order-md-1 mt-4">
-            <div class="d-flex align-items-center">
+        <div class="row justify-content-evenly">
+          <div class="col-md-3">
+            <div class="position-relative text-center">
               <img
                 src="img/profile.png"
                 alt="Product Image"
-                class="rounded-circle profile-img"
+                class="rounded-circle profile-img-edit"
               />
-              <div class="d-block profile ms-4">
-                <h5>Dita Putri Adini</h5>
-                <label for="">ditaputriadini@gmail.com</label> <br />
-                <label for="">+62 853 3413 6433</label>
+              <a
+                href=""
+                class="position-absolute top-0 start-50 translate-middle-x d-flex align-items-center rounded-0 edit_profile"
+                target="_blank"
+                style="z-index: 1000"
+              >
+                <img src="icon/edit_rounded.png" style="height: 60px" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-7 mt-5 mt-md-0">
+            <h5 class="mb-0">Change Password</h5>
+
+            <form class="mb-4 mt-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-input"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email Address"
+                  value="ditaadini@gmail.com"
+                />
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 order-1 order-md-2 text-end">
-            <div class="d-flex justify-content-end">
-              <a href="edit_profile_login.html" class="btn btn-outline-profile">
-                <img src="icon/ep_edit.png" alt="" /> Edit Profile
-              </a>
-              <a href="index.html" class="btn btn-outline-profile">
-                <img src="icon/logout.png" alt="" srcset="" /> Log out
-              </a>
-            </div>
-          </div>
-        </div>
-        <h1 class="text-center mt-5">Shipping Adress</h1>
-        <hr style="margin-top: -20px" />
-        <div class="d-flex align-items-center justify-content-center my-5">
-          <img
-            src="icon/mynaui_location.png"
-            class="me-3"
-            width="29"
-            height="29"
-            alt=""
-            srcset=""
-          />
-          <p>
-            RANGKAH 7/34 RT/RW 004/001 KECAMATAN TAMBAKSARI, KELUARAHAN RANGKAH,
-            KOTA SURABAYA, JAWA TIMUR, INDONESIA
-          </p>
-        </div>
-        <div class="row g-2 justify-content-between">
-          <div class="col-sm-4 col-md-3">
-            <a href="profile_unpaid_login.html" class="btn btn-order w-100"
-              >UNPAID ORDERS</a
-            >
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <a href="profile_paid_login.html" class="btn btn-order w-100"
-              >PAID ORDERS</a
-            >
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <a href="profile_shipped_login.html" class="btn btn-order w-100"
-              >SHIPPED ORDERS</a
-            >
-          </div>
-        </div>
-        <div class="card mt-3 px-4 py-5 my-5">
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="d-block" id="card">
-              <label for="" class="d-block">Order #ORD001</label>
-              <span>2024-11-07</span>
-            </div>
-            <a href="" class="btn btn-pay">PAY NOW</a>
-          </div>
-          <div class="d-block my-4">
-            <label for="" class="d-block">PRIME CAPELET IN CHALK</label>
-            <span>Size S- M</span>
-          </div>
-          <div class="d-flex justify-content-between">
-            <div class="d-block" id="card">
-              <small class="d-block">Payment Deadline</small>
-              <h4>2024-11-07 15:30</h4>
-            </div>
-            <div class="d-block" id="card">
-              <small class="d-block">Total Payment</small>
-              <h4>Rp 899.000</h4>
-            </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control form-input"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  value="dita020503"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password Confirmation</label
+                >
+                <input
+                  type="password"
+                  class="form-control form-input"
+                  id="exampleInputPassword1"
+                  placeholder="Password Confirmation"
+                  value="dita020503"
+                />
+              </div>
+              <h5>Personal Information</h5>
+              <div class="mb-3">
+                <label for="exampleInputFullname" class="form-label"
+                  >Fullname</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-input"
+                  id="exampleInputFullname"
+                  value="Dita Putri Adini"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputDate" class="form-label"
+                  >Birth Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control form-input"
+                  id="exampleInputDate"
+                  value="01/10/2000"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label"
+                  >Mobile or Phone Number</label
+                >
+                <input
+                  type="number"
+                  class="form-control form-input"
+                  id="exampleInputPhone"
+                  value="085312345678"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="city" class="form-label">City/District</label>
+                <select id="city" class="form-select mb-3">
+                  <option class="font-inter">Surabaya, Tambaksari</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="postalCode" class="form-label">Postal Code</label>
+                <input
+                  type="number"
+                  class="form-control form-input"
+                  id="postalCode"
+                  value="60135"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Address" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control form-input"
+                  id="Address"
+                  value="Rangkah VII/34 RT 01 RW 04"
+                />
+              </div>
+              <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-submit my-3">
+                  CANCEL
+                </button>
+                <a href="profile_paid_login.html" class="btn btn-submit my-3"
+                  >SAVE</a
+                >
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -349,8 +391,7 @@
       <a
         href="https://wa.me/6281234567890"
         class="btn btn-wa bg-first position-absolute top-0 start-0 ms-3 d-flex align-items-center rounded-0"
-        target="_blank"
-        style="z-index: 1000; margin-top: 580px"
+        style="z-index: 1000; margin-top: 480px"
       >
         <img
           src="icon/ic_baseline-whatsapp.png"
