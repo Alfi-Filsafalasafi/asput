@@ -40,7 +40,12 @@
           <span class="text-link mx-3">Or</span>
           <a href="register.html" class="text-link">Register</a>
           <span class="text-link mx-3">|</span>
-          <a href="cart_login.html">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <div class="position-relative">
               <!-- Cart Icon -->
               <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
@@ -53,6 +58,12 @@
               </span>
             </div>
           </a>
+          <ul class="dropdown-menu" style="left: auto">
+            <p class="font-inter p-3 m-0" style="font-size: 12px">
+              Please log in to your account to view and manage items in your
+              cart.
+            </p>
+          </ul>
         </div>
         <button
           class="navbar-toggler order-2 order-lg-2"
@@ -155,14 +166,30 @@
               <a href="cart_login.html">
                 <div class="position-relative">
                   <!-- Cart Icon -->
-                  <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
-
-                  <!-- Badge for item count -->
-                  <span
-                    class="position-absolute top-0 start-100 translate-middle badge text-link"
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    0
-                  </span>
+                    <div class="position-relative">
+                      <!-- Cart Icon -->
+                      <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+
+                      <!-- Badge for item count -->
+                      <span
+                        class="position-absolute top-0 start-100 translate-middle badge text-link"
+                      >
+                        0
+                      </span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu" style="left: auto">
+                    <p class="font-inter p-3 m-0" style="font-size: 12px">
+                      Please log in to your account to view and manage items in
+                      your cart.
+                    </p>
+                  </ul>
                 </div>
               </a>
             </div>

@@ -18,6 +18,7 @@
 
 }
 
+
 .btn-wa:hover {
   background-color: #128c7e; /* Warna hijau lebih gelap saat hover */
   text-decoration: none; /* Pastikan tidak ada garis bawah */
@@ -613,3 +614,8 @@ font-size: 12px;
       margin-top: 80px;
     }
   }
+
+
+.my-special-dropdown{
+  left: auto !important;
+}
