@@ -2,6 +2,27 @@
     font-family: "Baskervville", serif;
 }
 
+.btn-wa {
+  position: fixed; 
+  bottom: 20px;
+  left: 20px; 
+  z-index: 1000; 
+  background: #D0BCB1;
+  padding: 15px 20px; 
+  display: flex; 
+  align-items: center; 
+  text-decoration: none;
+  color: #3b2626;
+  box-shadow: 0 4px 8px rgba(116, 98, 98, 0.2); /* Tambahkan bayangan */
+  font-family: "Inter", sans-serif;
+
+}
+
+.btn-wa:hover {
+  background-color: #128c7e; /* Warna hijau lebih gelap saat hover */
+  text-decoration: none; /* Pastikan tidak ada garis bawah */
+}
+
 .font-inter{
     font-family: "Inter", sans-serif;
 
