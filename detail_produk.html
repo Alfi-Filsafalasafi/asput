@@ -372,18 +372,38 @@
           <div class="col-md-5 mt-5 mt-md-0 p-5 p-md-0">
             <div class="d-flex">
               <h3>PRIME CAPELET IN CHALK</h3>
-              <img
-                id="loveIcon"
-                src="icon/love.png"
-                alt="Love Icon"
-                height="24"
-                width="24"
-                class="ms-2"
-                style="margin-top: -10px; cursor: pointer"
-                data-state="outline"
-              />
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="position-relative">
+                  <!-- Cart Icon -->
+                  <img
+                    id="loveIcon"
+                    src="icon/love.png"
+                    alt="Love Icon"
+                    height="24"
+                    width="24"
+                    class="ms-2"
+                    style="margin-top: -10px; cursor: pointer"
+                    data-state="outline"
+                    alt=""
+                    srcset=""
+                  />
+
+                  <!-- Badge for item count -->
+                </div>
+              </a>
+              <ul class="dropdown-menu" style="left: auto">
+                <p class="font-inter p-3 m-0 border-0" style="font-size: 12px">
+                  Please log in to your account to view and manage items in your
+                  cart.
+                </p>
+              </ul>
             </div>
-            <h6 class="font-inter my-3">IDR 819.000</h6>
+            <h6 class="font-inter mb-3">IDR 819.000</h6>
             <p class="mb-5">
               The secret of a quick and neat hijab do without messing it up
               later that day is intactness. Lafiye’s certified botanic origin
@@ -478,6 +498,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
-    <script src="love.js"></script>
   </body>
 </html>

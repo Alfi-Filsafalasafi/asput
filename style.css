@@ -189,11 +189,13 @@ footer{
 footer p{
     font-size:12px;
     font-family: "Inter", sans-serif;
+    color: #E9DCD6;
     
 }
 footer h6{
     font-family: "Inter", sans-serif;
     margin-bottom: 22px;
+    color: #E9DCD6;
 }
 footer a{
     font-size:12px;
@@ -230,10 +232,19 @@ color: #664242;
     font-family: "Inter", sans-serif;
     font-size: 12px;
     margin-right: 10px;
+    color: #746770;
 }
 #detail p{
     border: 1px solid #746770;
     padding: 22px;
+    font-family: "Inter", sans-serif;
+font-size: 12px;
+color: #746770;
+}
+
+#detail h6{
+  color: #746770;
+  font-weight: 400;
 }
 
 #pilihan span{
