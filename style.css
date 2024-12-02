@@ -20,8 +20,8 @@
 
 
 .btn-wa:hover {
-  background-color: #128c7e; /* Warna hijau lebih gelap saat hover */
-  text-decoration: none; /* Pastikan tidak ada garis bawah */
+  background: #746770;
+  color: white;
 }
 
 .font-inter{
@@ -162,9 +162,7 @@
     margin: 0;
     text-align: center;
 }
-.btn-wa:hover{
-    background: #cfa795;
-}
+
 
 #whatAre h1{
     font-size: 55px;
@@ -216,7 +214,11 @@ font-size:12px;
     border-radius: 50px;
     padding: 13px 55px ;
 }
-
+.btn-subscribe:hover{
+  background: #E9DCD6;
+  color: #664242;
+ 
+}
 .color1{
 color: #664242;
 }
@@ -326,13 +328,25 @@ font-weight: 400;
     outline: none;    font-family: "Inter", sans-serif;
     padding: 16px 27px;
     font-size: 12px;
-    margin-bottom: 20px;
 
+}
+
+.form-input.border-right-none {
+  background-color: transparent;
+  border: 1px solid #746770;
+  border-right: 0;
+
+}
+.input-group-text {
+  border: 1px solid #746770;
+  background: white;
+  border-left: 0;
+  border-radius: 0;
+  padding-right: 25px;
 }
 .form-input:focus, .form-input:active{
     background-color: transparent;
-    border: 1px solid #746770;
-    color: #664242; /* Menambahkan garis bawah putih */
+    
     border-radius: 0; /* Menghilangkan radius pada sudut */
     outline: none;
     box-sizing: none;
@@ -372,6 +386,11 @@ font-weight: 400;
     font-family: "Inter", sans-serif;
 font-size: 12px;
 
+}
+
+.add-to-cart:hover {
+  background-color: #746770;/* Beige shade */
+  color: white; /* Text color */
 }
 
 .content-blog *{
@@ -438,7 +457,8 @@ color: #664242;
   }
 
   .btn-submit:hover{
-    background: #cbb4a8;
+    background: #746770;
+    color: white;
   }
 
   .dropdown-item:active{
@@ -585,7 +605,8 @@ margin-left: 20px;
       }
 
       .btn-order:hover{
-        background: #cbb4a8;
+        background: #746770;
+        color: white;
       }
 
 .btn-pay, .btn-pay:hover, .btn-pay:active{
