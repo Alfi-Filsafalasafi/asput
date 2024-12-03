@@ -87,6 +87,10 @@ line-height: 18px;
 text-align: left;
 
 }
+.dropdown-item{
+  font-size: 13px;
+  color: #664242;
+}
 .text-link{
     font-family: "Inter", sans-serif;
     font-size: 12px;
@@ -169,7 +173,7 @@ text-align: left;
     color:#D0BCB1;
 }
 .menu-dashboard a.dropdown-item{
-    color: #3b2626;
+    color: #664242;
 }
 .menu-dashboard a.dropdown-item:hover{
     background: transparent;
@@ -588,6 +592,12 @@ font-size: 12px;
     color: #746770;
 }
 
+#kata-kata label {
+font-size: 12px;
+font-weight: 600;
+line-height: 15.4px;
+color: #664242;
+}
 
 #auth h4{
 font-size: 19px;
@@ -595,6 +605,16 @@ font-weight: 400;
 line-height: 26.6px;
 color: #664242;
 font-family: "Inter", sans-serif;
+
+}
+
+#auth h5{
+  font-family: "Inter", sans-serif;
+
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+color: #664242;
 
 }
 
@@ -635,6 +655,13 @@ text-align: left;
 
 }
 
+#auth h2{
+  font-family: "Baskervville", serif;
+color: #664242;
+font-size: 30px;
+font-weight: 400;
+line-height: 42px;
+}
 .form-check-label{
   color: #664242;
 font-size: 13px;
@@ -702,6 +729,7 @@ background: #664242;
     font-weight: 400;
     line-height: 79.3px;
     font-family: "Mrs Saint Delafield", cursive;
+    color: #664242;
   }
 
   .judul {
@@ -760,7 +788,18 @@ color: #664242;
   #va_pembayaran *{
     font-family: "Inter", sans-serif;
   }
-
+  #va_pembayaran label{
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+color: #664242;
+  }
+#payment li{
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+color : #746770;
+}
 
   .form-copy {
     background-color: transparent;
@@ -798,8 +837,9 @@ color: white;
 
 .disabled-link {
     pointer-events: none; /* Mematikan klik */
-    opacity: 0.5; /* Mengurangi kejelasan */
+    opacity: 0.9; /* Mengurangi kejelasan */
     cursor: not-allowed; /* Ubah cursor */
+    background: #A16D6D;
   }
 
   #payment li {
@@ -919,7 +959,7 @@ font-weight: 400;
 
 #profile label {
   font-family: "Baskervville", serif;
-
+color: #664242;
 font-size: 16px;
 font-weight: 400;
 line-height: 22.4px;
@@ -1077,4 +1117,14 @@ margin: 0;
     .modal-content {
       border-radius: 0px;
       box-shadow: 0 4px 8px rgba(116, 98, 98, 0.2);
+    }
+
+    #kata-kata h2{
+      font-family: "Baskervville", serif;
+
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 42px;
+      color: #664242;
+
     }

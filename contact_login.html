@@ -292,9 +292,7 @@
           </div>
           <div class="col-md-9 col-lg-5">
             <form class="mb-5 mt-2">
-              <h5 class="mt-5 mb-3" style="color: #664242; font-weight: 400">
-                Send your message
-              </h5>
+              <h5 class="mt-5 mb-3">Send your message</h5>
 
               <div class="mb-3">
                 <input
@@ -341,13 +339,15 @@
                   placeholder="Phone Number"
                 />
               </div>
-              <button type="submit" class="btn btn-submit my-3">SEND</button>
-              <p>
-                Forgot your password?
-                <a href="" class="text-link color-2" style="font-size: 12px"
-                  >click here recover.</a
-                >
-              </p>
+              <a
+                href="#"
+                class="btn btn-first py-2 my-3"
+                style="width: 138px"
+                data-bs-toggle="modal"
+                data-bs-target="#sendModal"
+              >
+                SEND
+              </a>
             </form>
           </div>
         </div>
@@ -408,6 +408,24 @@
       </div>
     </footer>
 
+    <div
+      class="modal fade"
+      id="sendModal"
+      tabindex="-1"
+      aria-labelledby="sendModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-3" id="received-modal">
+            <p style="color: #979797">
+              The message has been sent :) <br />
+              click anywhere to continue the activity
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
