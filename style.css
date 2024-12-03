@@ -576,26 +576,64 @@ font-size: 12px;
     font-size: 12px;
     color: #746770;
 }
-#auth *{
+
+
+#auth h4{
+font-size: 19px;
+font-weight: 400;
+line-height: 26.6px;
+color: #664242;
+font-family: "Inter", sans-serif;
+
+}
+
+#auth p{
+    color: #746770;
+    font-size: 12px;
     font-family: "Inter", sans-serif;
 
 }
-#auth p{
-    color: #746770;
-    font-size: 13px;
+#auth a{
+  /* color: #746770; */
+  /* font-size: 12px; */
+  font-family: "Inter", sans-serif;
+
 }
 
+#auth a.btn-hover:hover{
+  color: white;
+}
 #auth span{
     color: #746770;
     font-size: 11px;
+    font-family: "Inter", sans-serif;
+
 }
 
 #auth label{
     font-family: "Inter", sans-serif;
-
 font-size: 12px;
-font-weight: 500;
-color: #746770;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+    color: #746770;
+
+}
+
+.form-check-label{
+  color: #664242;
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+#auth .form-check-label a{
+ color: #746770;
 
 }
 .form-check-input[type=checkbox] {
@@ -830,4 +868,14 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: #746770;
 
+}
+
+.btn-hover:hover {
+ color: #664242;
+  font-size: 16px;
+}
+
+.btn-hover:hover {
+  background: #746770;
+  color: white;
 }
