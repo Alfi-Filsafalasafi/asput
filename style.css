@@ -698,6 +698,34 @@ background: #664242;
   .card {
     border: 1px solid #664242;
   }
+
+  .card label {
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+color: #664242;
+
+  }
+
+  .card span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #664242;
+    
+      }
+
+      .card h4{
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+color: #664242;
+
+      }
+
+      .card tbody, td, tfoot, th, thead, tr {
+color: #664242;
+      }
   #va_pembayaran *{
     font-family: "Inter", sans-serif;
   }
@@ -784,11 +812,12 @@ color: white;
 padding: 8px 17px 8px 17px;
 gap: 10px;
 border-radius: 15px;
-border: 1px solid #3b2626;
+border: 1px solid #664242;
 opacity: 0px;
 outline: none;    font-family: "Inter", sans-serif;
 font-size: 13px;
 margin-left: 20px;
+color: #664242;
   }
 
   .btn-outline-profile:active, .btn-outline-profile:focus{
@@ -805,7 +834,7 @@ margin-left: 20px;
     border-radius: 0;
     color: #664242;
     font-family: "Inter", sans-serif;
-    font-size: 12px    ;
+    font-size: 13px    ;
     padding-top: 15px;
     padding-bottom: 15px;
       }
@@ -828,10 +857,44 @@ font-size: 12px;
 #profile h1{
     font-family: "Mrs Saint Delafield", cursive;
     font-size: 55px;
+    color: #664242;
+font-weight: 400;
+
 }
 #profile p{
-    font-size: 13px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+    padding-top: 12px;
+    color: #664242;
 }
+
+#profile h5{
+  font-family: "Baskervville", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #664242;
+
+}
+
+#profile label {
+  font-family: "Baskervville", serif;
+
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+
+}
+
+
 
 .edit_profile {
     margin-top: 130px;
