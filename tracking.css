@@ -1,0 +1,57 @@
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  .timeline-line {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #ccc;
+  }
+  
+  .timeline-green {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 60%; /* 60% hijau */
+    height: 4px;
+    background-color: green;
+  }
+  .timeline-step {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+  }
+  .timeline-step .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #c2cbd8;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #746770;
+  }
+  .timeline-step.completed .circle {
+    background-color: #28a745;
+    color: white;
+  }
+  .timeline-step span {
+    display: block;
+    margin-top: 8px;
+    font-size: 10px;
+    color: #746770;
+  }
+  .timeline-step small {
+    display: block;
+    margin-top: 6px;
+    font-size: 10px;
+    font-weight: 600;
+  }

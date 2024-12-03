@@ -845,7 +845,8 @@ color: #664242;
   }
   .btn-outline-profile:hover{
     border: 1px solid #3b2626;
-    background: #cbb4a8;
+    background: #746770;
+    color:white;
   }
 
   .btn-order {
@@ -985,3 +986,84 @@ font-weight: 400;
 line-height: 20px;
 
 }
+
+#order-detail *{
+  font-family: "Inter", sans-serif;
+  
+}
+
+#order-detail label {
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+color: #746770;
+}
+
+#order-detail .card {
+border-radius: 0;
+border: 1px solid #746770;
+padding: 20px;
+}
+
+#order-detail .card.resi {
+  background: #E3DEDC;
+  border-radius: 0;
+  border: 0px;
+
+}
+
+#order-detail h4{
+font-size: 19px;
+font-weight: 400;
+line-height: 26.6px;
+text-align: center;
+color: #664242;
+
+}
+
+#order-detail h3 {
+font-size: 19px;
+font-weight: 400;
+line-height: 26.6px;
+text-align: left;
+color: #746770;
+}
+
+#received-modal h4 {
+  font-family: "Baskervville", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+color: #664242;
+}
+#received-modal p {
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+text-align: center;
+font-family: "Inter", sans-serif;
+color: #746770;
+padding: 0;
+margin: 0;
+}
+
+.btn-received {
+ 
+  gap: 10px;
+  opacity: 0px;
+  background: #D0BCB1;
+  border-radius: 0;
+  width: 138px;
+  color: #664242;
+    }
+  
+    .btn-received:hover{
+      background: #746770;
+      color: white;
+    }
+
+    .modal-content {
+      border-radius: 0px;
+      box-shadow: 0 4px 8px rgba(116, 98, 98, 0.2);
+    }
