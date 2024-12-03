@@ -26,6 +26,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/logo.png" type="image/png" />
   </head>
@@ -41,19 +45,19 @@
             ><img src="img/logo.png" alt="" srcset=""
           /></a>
         </a>
-        <div class="d-flex order-1 order-lg-3">
+        <div class="d-flex align-items-center order-1 order-lg-3">
           <a href="favorit_login.html"
-            ><img src="icon/favorit.png" height="29" alt=""
-          /></a>
+            ><i class="bi bi-heart color1" style="font-size: 25px"></i
+          ></a>
           <span class="text-link mx-3" style="font-size: 17px">|</span>
-          <a href="profile_paid_login.html"
-            ><img src="icon/circum_user.png" alt="" srcset=""
-          /></a>
+          <a href="profile_paid_login.html">
+            <i class="bi bi-person color1" style="font-size: 25px"></i
+          ></a>
           <span class="text-link mx-3" style="font-size: 17px">|</span>
           <a href="cart_login.html">
             <div class="position-relative">
               <!-- Cart Icon -->
-              <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+              <i class="bi bi-bag color1" style="font-size: 21px"></i>
 
               <!-- Badge for item count -->
               <span
@@ -150,19 +154,20 @@
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-4 col-lg-3">
             <!-- User -->
-            <div class="input-group border-bottom mb-3">
+            <div
+              class="input-group mb-3 pb-1"
+              style="border-bottom: 1px solid #664242"
+            >
               <input
                 type="text"
                 class="form-control search-input2"
                 placeholder="Search"
               />
               <div class="input-group-append d-flex align-items-center pe-3">
-                <img
-                  src="icon/search-line2.png"
-                  width="15"
-                  height="14"
-                  alt=""
-                />
+                <i
+                  class="fa-solid fa-magnifying-glass color1"
+                  style="font-size: 10px"
+                ></i>
               </div>
             </div>
           </div>
@@ -174,17 +179,17 @@
           <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
             <div class="d-flex align-items-center order-1 order-lg-3">
               <a href="favorit_login.html"
-                ><img src="icon/favorit_dark.png" height="29" alt=""
-              /></a>
+                ><i class="bi bi-heart color1" style="font-size: 25px"> </i
+              ></a>
               <span class="text-link mx-3" style="font-size: 17px">|</span>
               <a href="profile_paid_login.html"
-                ><img src="icon/circum_user_dark.png" alt="" srcset=""
-              /></a>
+                ><i class="bi bi-person color1" style="font-size: 25px"></i
+              ></a>
               <span class="text-link mx-3" style="font-size: 17px">|</span>
               <a href="cart_login.html">
                 <div class="position-relative">
                   <!-- Cart Icon -->
-                  <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+                  <i class="bi bi-bag color1" style="font-size: 21px"></i>
 
                   <!-- Badge for item count -->
                   <span
@@ -265,7 +270,7 @@
         <hr />
         <div class="row g-4">
           <div class="col-md-4 mb-5 mb-md-0">
-            <a href="#" class="text-link">
+            <a href="detail_produk_login.html" class="text-link">
               <img src="img/produk/1.png" class="w-100 mb-3" alt="" srcset="" />
               <p>Baby Paris Hijab Square</p>
               <p class="my-2">Asput</p>

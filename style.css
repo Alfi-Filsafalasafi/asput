@@ -50,7 +50,7 @@
     font-size: 13px;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #3b2626;
+    color: #664242;
     font-weight: 500;
 }
 .navbar-toggler {
@@ -65,6 +65,27 @@
   outline: none; /* Hilangkan garis fokus */
   box-shadow: none; /* Hilangkan efek bayangan saat diklik */
   border: none; /* Pastikan tidak ada garis */
+}
+
+.nav-item:hover {
+  color: #664242;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.dropdown-menu.show .font-inter{
+  color: #979797;
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+
 }
 .text-link{
     font-family: "Inter", sans-serif;
@@ -113,6 +134,7 @@
 
 .search-input2{
     background-color: transparent;
+    font-family: "Inter", sans-serif;
     border: none;
     font-size: 12px;
     color: #664242; /* Menambahkan garis bawah putih */
@@ -133,6 +155,7 @@
     color: #664242;
 }
 
+
 .menu-dashboard a{
     color: #D0BCB1;
     text-decoration: none;
@@ -140,10 +163,10 @@
     font-size: 13px;
 }
 .menu-dashboard a:active{
-    color:white;
+    color:#D0BCB1;
 }
 .menu-dashboard a:hover{
-    color:white;
+    color:#D0BCB1;
 }
 .menu-dashboard a.dropdown-item{
     color: #3b2626;
@@ -168,33 +191,103 @@
 #newThisWeek h1{
     font-size: 55px;
     font-family: "Mrs Saint Delafield", cursive;
+    color: #664242;
+font-size: 61px;
+font-weight: 400;
+line-height: 79.3px;
+text-align: center;
+
 }
 #newThisWeek p{
     font-family: "Inter", sans-serif;
     font-size: 12px;
     margin: 0;
     text-align: center;
+font-weight: 400;
+line-height: 20px;
+color: #746770;
+
+}
+
+#newThisWeek h6{
+  font-family: "Baskervville", serif;
+color: #664242;
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+
 }
 
 
 #whatAre h1{
     font-size: 55px;
     font-family: "Mrs Saint Delafield", cursive;
+font-size: 61px;
+font-weight: 400;
+color: #664242;
+
+}
+#blog h1{
+  font-family: "Baskervville", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+  color: #664242;
+}
+
+#blog h3{
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color : #664242;
 }
 #blog h6{
     line-height: 25px;
     margin-top: 12px;
+    font-family: "Baskervville", serif;
+
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+color: #664242;
+
 }
 #blog p{
     font-family: "Inter", sans-serif;
     font-size:12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #746770;
+
 }
 #blog a{
     font-size:12px;
     font-family: "Inter", sans-serif;
     color: #746770;
+font-weight: 400;
+line-height: 20px;
+text-underline-offset: 3px;
 }
 
+#isi_blog h2{
+  font-family: "Baskervville", serif;
+
+font-size: 30px;
+font-weight: 400;
+line-height: 42px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:#664242;
+}
+#isi_blog h5{
+  font-size: 13px;
+  font-weight: 600;
+}
 footer{
     padding-top: 54px;
     background: #746770;
@@ -203,12 +296,21 @@ footer p{
     font-size:12px;
     font-family: "Inter", sans-serif;
     color: #E9DCD6;
-    
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
 }
 footer h6{
     font-family: "Inter", sans-serif;
     margin-bottom: 22px;
     color: #E9DCD6;
+    font-size: 13px;
+font-size: 13px;
+font-weight: 600;
+line-height: 18.2px;
+
 }
 footer a{
     font-size:12px;
@@ -216,6 +318,11 @@ footer a{
     text-decoration: none;
     color: #E9DCD6;
     margin-top: 20px;
+    
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
 }
 .input-newsletter{
     font-family: "Inter", sans-serif;
@@ -240,6 +347,9 @@ color: #664242;
 .color2{
     color: #746770;
 }
+.color3{
+  color: #E9DCD6;
+}
 
 #detail span{
     font-family: "Inter", sans-serif;
@@ -258,16 +368,36 @@ color: #746770;
 #detail h6{
   color: #746770;
   font-weight: 400;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+
+}
+#detail h3{
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+font-family: "Baskervville", serif;
+color: #664242;
 }
 
 #pilihan span{
     font-family: "Inter", sans-serif;
     font-size: 12px;
     margin-right: 10px;
+font-weight: 400;
+line-height: 20px;
+color: #746770;
 }
 #pilihan h6{
     font-family: "Inter", sans-serif;
 color: #664242;
+font-size: 12px;
+font-weight: 600;
+line-height: 15.4px;
+text-align: left;
+
 }
 
 #pilihan .nav-link{
@@ -323,6 +453,13 @@ font-weight: 400;
     flex-wrap: wrap;
     margin-top: 30px;
   }
+
+  @media (max-width: 767px) {
+    .pagination-container {
+      margin-top: 0px;
+    margin-bottom: 50px;
+    }
+  }
   .pagination-item {
     display: inline-flex;
     align-items: center;
@@ -331,14 +468,16 @@ font-weight: 400;
     height: 30px;
     border-radius: 50%;
     color: #746770;
-    font-size: 14px;
     font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
     
     text-decoration: none;
   }
   .pagination-item.active {
-    background-color: #cbb4a8;
-    font-weight: bold;
+    background-color: #D0BCB1;
   }
   .pagination-item:hover {
     background-color: #dfc5b5;
@@ -423,7 +562,7 @@ font-size: 12px;
 .content-blog p {
     font-size: 12px;
     color: #746770;
-    line-height: 18px;
+    line-height: 20px;
 }
 .content-blog h5{
     margin-top: 29px;
@@ -488,6 +627,11 @@ color: #664242;
   .dropdown-item:active{
 background: #664242;
 
+  }
+
+  .nav-pilihan:hover{
+    color: #D0BCB1;
+    text-decoration: underline;
   }
 
   #cart *{
@@ -663,4 +807,27 @@ font-size: 12px;
 
 .my-special-dropdown{
   left: auto !important;
+}
+
+#quantity {
+  font-family: "Inter", sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #746770;
+}
+
+#recentPostCollapse .text-link{
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #746770;
+
 }

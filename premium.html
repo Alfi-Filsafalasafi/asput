@@ -26,6 +26,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/logo.png" type="image/png" />
   </head>
@@ -52,7 +56,7 @@
           >
             <div class="position-relative">
               <!-- Cart Icon -->
-              <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+              <i class="bi bi-bag color1" style="font-size: 21px"></i>
 
               <!-- Badge for item count -->
               <span
@@ -142,19 +146,20 @@
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-4 col-lg-3">
             <!-- User -->
-            <div class="input-group border-bottom mb-3">
+            <div
+              class="input-group mb-3 pb-1"
+              style="border-bottom: 1px solid #664242"
+            >
               <input
                 type="text"
                 class="form-control search-input2"
                 placeholder="Search"
               />
               <div class="input-group-append d-flex align-items-center pe-3">
-                <img
-                  src="icon/search-line2.png"
-                  width="15"
-                  height="14"
-                  alt=""
-                />
+                <i
+                  class="fa-solid fa-magnifying-glass color1"
+                  style="font-size: 10px"
+                ></i>
               </div>
             </div>
           </div>
@@ -178,7 +183,7 @@
                   >
                     <div class="position-relative">
                       <!-- Cart Icon -->
-                      <img src="icon/bag-hand-coklat.png" alt="" srcset="" />
+                      <i class="bi bi-bag color1" style="font-size: 21px"></i>
 
                       <!-- Badge for item count -->
                       <span
@@ -204,11 +209,13 @@
             class="d-flex menu-dashboard justify-content-center pt-5"
             style="gap: 40px"
           >
-            <a href="news.html" style="color: #664242">NEW</a>
+            <a href="news.html" class="nav-pilihan" style="color: #664242"
+              >NEW</a
+            >
 
             <div class="dropdown">
               <a
-                class="nav-link"
+                class="nav-link nav-pilihan"
                 href="#"
                 style="color: #664242"
                 data-bs-toggle="dropdown"
@@ -228,10 +235,12 @@
                 <li><a class="dropdown-item" href="mukena.html">MUKENA</a></li>
               </ul>
             </div>
-            <a href="clothing.html" style="color: #664242">CLOTHINGS</a>
+            <a href="clothing.html" class="nav-pilihan" style="color: #664242"
+              >CLOTHINGS</a
+            >
             <div class="nav-item dropdown">
               <a
-                class="nav-link"
+                class="nav-link nav-pilihan"
                 style="color: #664242"
                 href="#"
                 data-bs-toggle="dropdown"
@@ -246,7 +255,9 @@
                 </li>
               </ul>
             </div>
-            <a href="blog.html" style="color: #664242">BLOG</a>
+            <a href="blog.html" class="nav-pilihan" style="color: #664242"
+              >BLOG</a
+            >
           </div>
         </div>
       </div>
@@ -260,8 +271,9 @@
             </select>
             <span
               >Categori : Premium
-              <img src="icon/typcn_delete.png" class="ms-3" alt=""
-            /></span>
+              <a href="">
+                <i class="fa-solid fa-circle-xmark ms-1 color2"></i></a
+            ></span>
             <div class="mt-4 mb-3">
               <!-- Tombol Categories -->
               <a
@@ -427,12 +439,12 @@
             <div class="collapse d-md-block" id="priceCollapse">
               <input
                 type="number"
-                class="form-control form-input"
+                class="form-control form-input my-3"
                 placeholder="IDR. Minimum"
               />
               <input
                 type="number"
-                class="form-control form-input"
+                class="form-control form-input my-3"
                 placeholder="IDR. Maximum"
               />
             </div>
@@ -449,7 +461,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 52.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -475,7 +487,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 63.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -488,7 +500,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 52.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -514,7 +526,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 63.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -527,7 +539,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 52.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -553,7 +565,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 63.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -566,7 +578,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 52.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
               <div class="col-6 col-md-4 mb-5 mb-md-0">
@@ -592,7 +604,7 @@
                   />
                   <p>Aga Voile Pashmina Scarf</p>
                   <p class="my-2">Asput</p>
-                  <p>IDR 63.000</p>
+                  <p>IDR 67.000</p>
                 </a>
               </div>
             </div>
