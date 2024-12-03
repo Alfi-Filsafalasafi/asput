@@ -313,7 +313,7 @@
                     type="button"
                     id="togglePassword"
                   >
-                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-eye color1"></i>
                   </button>
                 </div>
               </div>
@@ -333,7 +333,7 @@
                     type="button"
                     id="togglePassword2"
                   >
-                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-eye color1"></i>
                   </button>
                 </div>
               </div>
@@ -519,12 +519,12 @@
 
           if (passwordInput.type === "password") {
             passwordInput.type = "text";
-            icon.classList.remove("bi-eye");
-            icon.classList.add("bi-eye-slash");
+            icon.classList.remove("bi-eye color1");
+            icon.classList.add("bi-eye-slash color1");
           } else {
             passwordInput.type = "password";
-            icon.classList.remove("bi-eye-slash");
-            icon.classList.add("bi-eye");
+            icon.classList.remove("bi-eye-slash color1");
+            icon.classList.add("bi-eye color1");
           }
         });
     </script>
