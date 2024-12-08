@@ -1,0 +1,152 @@
+
+.headlines1_regular{
+     font-family: "Baskervville", serif;
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 79.3px;
+}
+.headlines3_regular{
+     font-family: "Baskervville", serif;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 50.7px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.headlines5_regular{
+     font-family: "Baskervville", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.body2_regular{
+     font-family: "Baskervville", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+.inter5_regular{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.inter6_regular{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+}
+.body_inter1_regular{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+.body_inter2_regular{
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+.body_inter3_regular{
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form-input {
+    background-color: transparent;
+    border: 1px solid #746770;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;    font-family: "Inter", sans-serif;
+    padding: 16px 27px;
+    font-size: 12px;
+
+}
+
+.form-input-date {
+    background-color: #664242;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;    font-family: "Inter", sans-serif;
+    padding: 16px 27px;
+    font-size: 12px;
+
+}
+
+.form-input-date:active, .form-input-date:focus, .form-input-date:hover{
+    background: #746770;
+    color: white;
+}
+
+.btn-submit {
+    padding: 8px 51px 8px 51px;
+    gap: 10px;
+    opacity: 0px;
+    background: #D0BCB1;
+    border-radius: 0;
+    color: #664242;
+      }
+    
+.btn-submit:hover{
+        background: #746770;
+        color: white;
+}
+
+.btn-color1{
+    color : white;
+    border-radius: 0;
+    background: #664242;
+}
+
+.btn-outlined-color1{
+    border: 1px solid #664242;
+    background: transparent;
+    border-radius: 0;
+}
+.search-input{
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    border: none;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+}
+.search-input:focus, .search-input:active{
+    background-color: transparent;
+    border: none;
+    font-family: "Inter", sans-serif;
+    color: #664242; /* Menambahkan garis bawah putih */
+    border-radius: 0; /* Menghilangkan radius pada sudut */
+    outline: none;
+    box-sizing: none;
+    font-size: 12px;
+  box-shadow: none;
+}
+.search-input::placeholder{
+    color: #664242;
+}
+
+.card{
+    box-shadow: 0 1px 4px #0C0C0D0D;
+    border: 1px solid #E8E8E8;
+}
+
+.color1{
+    color:#664242;
+}
+.color2{
+    color: #746770;
+}
+.bgcolor1{
+    background: #664242;
+}
+.bgcolor2{
+    background: #D0BCB1;
+}
