@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Asput</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tambahkan script ini di <head> -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <link rel="stylesheet" href="./sidebar-02/css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch bg-white">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="pl-4 pt-5">
+          <h1 class="mb-5">
+            <a href="index.html" class="headlines3_regular color1">asput.</a>
+          </h1>
+          <ul class="list-unstyled components mb-5">
+            <li class="my-1 active">
+              <a href="dashboard.html" class="body2_regular color1 py-3"
+                >DASHBOARD</a
+              >
+            </li>
+            <li class="my-1">
+              <a href="order.html" class="body2_regular color1 py-3">ORDER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">TRACKING</a>
+            </li>
+            <li class="my-1">
+              <a href="e-commerce.html" class="body2_regular color1 py-3"
+                >E-COMMERCE</a
+              >
+            </li>
+            <li class="my-1">
+              <a href="crm.html" class="body2_regular color1 py-3">CRM</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">BLOG</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">CUSTOMER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">HELP CENTER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">ROLE</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div
+          class="d-block d-md-flex justify-content-between align-items-center"
+        >
+          <!-- Bagian Dashboard -->
+          <h5 class="headlines5_regular color1 order-0 d-none d-md-block">
+            CUSTOMER
+          </h5>
+
+          <!-- Bagian Konten di atas Dashboard -->
+          <div
+            class="d-flex align-items-center justify-content-end mb-4 mb-md-0 order-1"
+          >
+            <div class="position-relative">
+              <!-- Cart Icon -->
+              <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="position-relative">
+                  <!-- Cart Icon -->
+                  <i class="bi bi-bell-fill color1" style="font-size: 24px"></i>
+                  <span
+                    class="position-absolute top-0 start-100 bgcolor1"
+                    style="
+                      margin-left: -10px;
+                      margin-top: 6px;
+                      height: 12px;
+                      width: 12px;
+                      border-radius: 50%;
+                      border: 2px solid white;
+                    "
+                  ></span>
+                </div>
+              </a>
+              <div class="dropdown-menu p-3" style="left: auto; width: 378px">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="" class="body_inter3_regular color1"
+                    >5 NEW NOTIFICATIONS</label
+                  >
+                  <a href="#"
+                    ><i class="bi bi-x color1" style="font-size: 24px"></i
+                  ></a>
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-emoji-smile mr-3"
+                      style="color: #fcdc3b; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >Product delivery is complete</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-emoji-smile mr-3"
+                      style="color: #fcdc3b; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >Product delivery is complete</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div class="text-center">
+                  <a href="" class="text-center body_inter3_regular color1"
+                    >View All</a
+                  >
+                </div>
+              </div>
+            </div>
+            <label class="body2_regular my-auto mx-3">AULYA SHANDY</label>
+            <div
+              class="circle"
+              style="border-radius: 50%; border: 1px solid #664242"
+            >
+              <i class="bi bi-person color1 mx-2" style="font-size: 20px"></i>
+            </div>
+          </div>
+
+          <!-- Bagian Dashboard untuk layar besar -->
+          <h5 class="headlines5_regular color1 order-0 d-block d-md-none">
+            CUSTOMER
+          </h5>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div
+              class="input-group mb-3"
+              style="border-bottom: 1px solid #664242"
+            >
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search"
+              />
+              <div class="input-group-append d-flex align-items-center pe-3">
+                <i
+                  class="fa-solid fa-magnifying-glass color1"
+                  style="font-size: 10px"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabel -->
+        <div class="card p-4 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="body_inter1_regular color1">Customer</h5>
+            <div class="d-flex">
+              <select name="" id="" class="form-control form-select mr-3 px-3">
+                <option value="">Status</option>
+                <option value="">Active</option>
+                <option value="">Blocked</option>
+              </select>
+              <a
+                href="#"
+                class="btn btn-outlined-color1 body_inter3_regular color2 px-3 dropdown-toggle"
+                id="exportDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center h-100">
+                  <i class="bi bi-download mr-2"></i>
+                  Export
+                </div>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="exportDropdown">
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportPDF"
+                  ><img src="../icon/pdf.png" alt="" class="mr-3" srcset="" />
+                  PDF</a
+                >
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportExcel"
+                >
+                  <img src="../icon/excel.png" alt="" class="mr-3" /> EXCEL</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive mt-3">
+            <table id="tabel-data" class="table">
+              <thead class="color1 bgcolor2">
+                <tr>
+                  <th scope="col">NO</th>
+                  <th scope="col">NAME</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">PHONE</th>
+                  <th scope="col">ADDRESS</th>
+                  <th scope="col">REGISTRATION</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">ACTION</th>
+                </tr>
+              </thead>
+              <tbody class="color2">
+                <tr>
+                  <td>1</td>
+                  <td>Dita Putri</td>
+                  <td>dita@gmail.com</td>
+                  <td>086753676527</td>
+                  <td>Jakarta</td>
+                  <td scope="row">10/12/2024</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #c41e3a"
+                    >
+                      Blocked
+                    </div>
+                  </td>
+                  <td>
+                    <a
+                      href=""
+                      id="deleteButton"
+                      class="deleteButton color2 mx-2"
+                      style="font-size: 20px"
+                    >
+                      <i class="bi bi-trash text-danger"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Keisha Bella</td>
+                  <td>bella@gmail.com</td>
+                  <td>086271526721</td>
+                  <td>Mojokerto</td>
+                  <td scope="row">01/12/2024</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #6375c9"
+                    >
+                      Active
+                    </div>
+                  </td>
+                  <td>
+                    <a
+                      href=""
+                      id="deleteButton"
+                      class="deleteButton color2 mx-2"
+                      style="font-size: 20px"
+                    >
+                      <i class="bi bi-trash text-danger"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Tabel -->
+      </div>
+    </div>
+    <!-- Modal view -->
+    <div
+      class="modal fade"
+      id="detailModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="detailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close ml-auto mr-4 mt-4 color1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="text-center body_inter1_regular color1">Lead Details</div>
+          <div class="modal-body">
+            <div class="card-border1">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Name:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalCustomer"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Email:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEmail"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Phone:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalPhone"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Address</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalAddress"
+                ></label>
+              </div>
+            </div>
+            <div class="card-border2 mt-3">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular"
+                  >Registration Date:</label
+                >
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalDate"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Status:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalStatus"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular"
+                  >Total Transaction:</label
+                >
+                <label for="" class="body_inter3_regular" id=""
+                  >5 (Rp 3.500.000)</label
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <label for="" class="body_inter3_regular"
+                  >Recent history:</label
+                >
+                <label for="" class="body_inter3_regular text-right" id=""
+                  >Last order on 28/11/2024 <br />status: Delivered</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal edit -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close ml-auto mr-4 mt-4 color1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="text-center body_inter1_regular color1">Lead Details</div>
+          <div class="modal-body">
+            <div class="card-border1">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Name:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditCustomer"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Email:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditEmail"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Phone:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditPhone"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Address</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditAddress"
+                ></label>
+              </div>
+            </div>
+            <div class="card-border2 my-3">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular color2 mt-2"
+                  >Status</label
+                >
+                <select name="" id="" class="form-select w-75">
+                  <option value="">Status</option>
+                  <option value="">Aktive</option>
+                  <option value="">Blocked</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button
+                class="btn btn-color2 body_inter2_regular"
+                style="padding-left: 30px; padding-right: 30px"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                Cancel
+              </button>
+              <a
+                href=""
+                class="btn btn-color1 body_inter2_regular"
+                style="padding-left: 30px; padding-right: 30px"
+                >Save</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Content End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="sidebar-02/js/jquery.min.js"></script>
+    <script src="sidebar-02/js/popper.js"></script>
+    <script src="sidebar-02/js/bootstrap.min.js"></script>
+    <script src="sidebar-02/js/main.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tabel-data").DataTable();
+      });
+    </script>
+    <script>
+      // Mengatur nilai input tanggal menjadi tanggal hari ini
+      document.addEventListener("DOMContentLoaded", () => {
+        const dateInput = document.getElementById("dateInput");
+        const today = new Date();
+        const formattedDate = today.toISOString().split("T")[0]; // Format menjadi yyyy-mm-dd
+        dateInput.value = formattedDate;
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".deleteButton").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          Swal.fire({
+            title: "Are you sure?",
+            html: '<span class="body_inter2_regular color2">You will not be able to recover this file</span>',
+            icon: "warning",
+            iconColor: "red",
+            showCancelButton: true,
+            confirmButtonText: "Yes, delete it!",
+            customClass: {
+              title: "headlines5_regular color1",
+              content: "body_inter2_regular color2",
+              confirmButton: "btn-color2 body_inter2_regular",
+              cancelButton: "btn-color1 body_inter2_regular",
+            },
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Lakukan aksi penghapusan di sini, misalnya panggil fungsi atau AJAX
+              Swal.fire({
+                title: "Deleted!",
+                html: '<span class="body_inter2_regular color2">Your item has been deleted</span>',
+                icon: "success",
+                customClass: {
+                  title: "headlines5_regular color1",
+                  content: "body_inter2_regular color2",
+                  confirmButton: "btn-color2 body_inter2_regular",
+                  cancelButton: "btn-color1 body_inter2_regular",
+                },
+              }).then(() => {});
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".bi-eye").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Ambil data dari baris tabel yang diklik
+          const row = this.closest("tr");
+          const date = row.cells[5].innerText;
+          const customer = row.cells[1].innerText;
+          const email = row.cells[2].innerText;
+          const phone = row.cells[3].innerText;
+          const status = row.cells[6].innerText.trim();
+          const address = row.cells[4].innerText;
+
+          // Isi modal dengan data
+          document.getElementById("modalDate").innerText = date;
+          document.getElementById("modalCustomer").innerText = customer;
+          document.getElementById("modalEmail").innerText = email;
+          document.getElementById("modalPhone").innerText = phone;
+          document.getElementById("modalStatus").innerText = status;
+          document.getElementById("modalAddress").innerText = address;
+
+          // Tampilkan modal
+          const detailModal = new bootstrap.Modal(
+            document.getElementById("detailModal")
+          );
+          detailModal.show();
+        });
+      });
+
+      document.querySelectorAll(".bi-pencil-square").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Ambil data dari baris tabel yang diklik
+          const row = this.closest("tr");
+          const customer = row.cells[1].innerText;
+          const email = row.cells[2].innerText;
+          const phone = row.cells[3].innerText;
+          const address = row.cells[4].innerText;
+
+          // Isi modal dengan data
+          document.getElementById("modalEditCustomer").innerText = customer;
+          document.getElementById("modalEditEmail").innerText = email;
+          document.getElementById("modalEditPhone").innerText = phone;
+          document.getElementById("modalEditAddress").innerText = address;
+
+          // Tampilkan modal
+          const editModal = new bootstrap.Modal(
+            document.getElementById("editModal")
+          );
+          editModal.show();
+        });
+      });
+    </script>
+  </body>
+</html>

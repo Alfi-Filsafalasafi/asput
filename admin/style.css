@@ -14,6 +14,11 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
+.headlines4_regular{
+    font-family: "Baskervville", serif;
+   font-size: 30px;
+   font-weight: 400;
+}
 .headlines5_regular{
      font-family: "Baskervville", serif;
     font-size: 25px;
@@ -49,6 +54,12 @@
     font-family: "Inter", sans-serif;
     font-size: 13px;
     font-weight: 400;
+    line-height: 18.2px;
+}
+.body_inter2_semibold{
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
     line-height: 18.2px;
 }
 .body_inter3_regular{
@@ -92,6 +103,27 @@
     font-size: 12px;
     color: #746770;
 }
+
+.upload-area {
+    border: 1px solid #746770;
+    color: #664242;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .upload-area img {
+      max-width: 100%;
+      max-height: 200px;
+      display: none;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .upload-area:hover {
+      background-color: #f9f9f9;
+    }
+
 .btn-submit {
     padding: 8px 51px 8px 51px;
     gap: 10px;
@@ -328,12 +360,28 @@ text-decoration-skip-ink: none;
     height: 40px;
   }
 
+.card-border1{
+    border: 1px solid #746770;
+    padding: 22px;
+    font-family: "Inter", sans-serif;
+font-size: 12px;
+color: #746770;
+}
+.card-border2{
+padding: 22px;
+gap: 10px;
+opacity: 0px;
+background: #E3DEDC;
+}
 
 .color1{
     color:#664242;
 }
 .color2{
     color: #746770;
+}
+.color3{
+    color: #E3DEDC;
 }
 .bgcolor1{
     background: #664242;

@@ -25,6 +25,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Tambahkan script ini di <head> -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -264,194 +268,9 @@
           </div>
         </div>
 
-        <!-- card -->
-        <div class="row mt-3">
-          <div class="col-md-6 col-lg-3 mt-3 mt-md-0">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Visit</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">3000</span>
-                <i
-                  class="bi bi-people-fill"
-                  style="font-size: 40px; color: #6375c9"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-success"
-                ><i class="bi bi-arrow-up-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mt-3 mt-md-0">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Revenue</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">25JT</span>
-                <i
-                  class="bi bi-coin"
-                  style="font-size: 40px; color: #2aab78"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-danger"
-                ><i class="bi bi-arrow-down-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mt-3 mt-md-0">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Order</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">12K</span>
-                <i
-                  class="bi bi-journal-text"
-                  style="font-size: 40px; color: #fcdc3b"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-success"
-                ><i class="bi bi-arrow-up-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mt-3 mt-md-0">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Order</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">18K</span>
-                <i
-                  class="bi bi-cart"
-                  style="font-size: 40px; color: #c41e3a"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-danger"
-                ><i class="bi bi-arrow-down-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-        </div>
-        <!-- end card -->
-
-        <!-- chart -->
-        <div class="row mt-3">
-          <!-- Status Order -->
-          <div class="col-md-4 mt-3 mt-md-0">
-            <div class="card h-100 p-4">
-              <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
-                Status Order
-              </h5>
-              <canvas
-                id="statusOrderChart"
-                class="mx-auto"
-                style="max-width: 140px"
-              ></canvas>
-              <div class="d-flex justify-content-around mt-5">
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Processing</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="bg-success mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Shipped</span>
-                  </div>
-                </div>
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-warning mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Pending</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="bg-danger mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Cancelled</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Business Overview -->
-          <div class="col-md-8 mt-3 mt-md-0">
-            <div class="card h-100 p-4">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="body_inter1_regular color1">Business Overview</h5>
-                <div class="btn-group mb-3" role="group">
-                  <button
-                    type="button"
-                    class="btn btn-color1 body_inter3_regular"
-                  >
-                    Weekly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Monthly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Yearly
-                  </button>
-                </div>
-              </div>
-
-              <div id="businessOverview" style=""></div>
-
-              <div class="d-flex justify-content-center">
-                <div class="d-flex align-items-center">
-                  <div
-                    class="bg-success ml-4 mr-2"
-                    style="height: 20px; width: 20px; border-radius: 50%"
-                  ></div>
-                  <span class="body_inter3_regular color1"> Revenue</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <div
-                    class="bg-danger ml-4 mr-2"
-                    style="height: 20px; width: 20px; border-radius: 50%"
-                  ></div>
-                  <span class="body_inter3_regular color1"> Sale</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end chart -->
-
         <!-- card ke 2 -->
         <div class="row mt-3">
-          <div class="col-md-6 col-lg-4 mt-3 mt-md-0">
+          <div class="col-md-6 col-lg-4">
             <div class="card pt-3 px-4">
               <span for="" class="body_inter1_regular color1 color1"
                 >New Customer</span
@@ -468,7 +287,7 @@
               <div id="newCustomer" style="margin-top: -80px"></div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mt-3 mt-md-0">
+          <div class="col-md-6 col-lg-4">
             <div class="card pt-3 px-4">
               <span for="" class="body_inter1_regular color1 color1"
                 >New Register</span
@@ -485,7 +304,7 @@
               <div id="newRegister" style="margin-top: -80px"></div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mt-3 mt-md-0">
+          <div class="col-md-6 col-lg-4">
             <div class="card pt-3 px-4">
               <span for="" class="body_inter1_regular color1 color1"
                 >Total Customer</span
@@ -504,97 +323,10 @@
           </div>
         </div>
         <!-- end card -->
-        <!-- chart 2 -->
-        <div class="row mt-3">
-          <!-- Order Statistik -->
-          <div class="col-md-8 mt-3 mt-md-0">
-            <div class="card h-100 p-4">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="body_inter1_regular color1">Order Statistik</h5>
-                <div class="btn-group mb-3" role="group">
-                  <button
-                    type="button"
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Weekly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Monthly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-color1 body_inter3_regular"
-                  >
-                    Yearly
-                  </button>
-                </div>
-              </div>
-
-              <div id="orderStatistik" style=""></div>
-            </div>
-          </div>
-          <!-- Top Selling Product -->
-          <div class="col-md-4 mt-3 mt-md-0">
-            <div class="card h-100 p-4">
-              <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
-                Top Selling Product
-              </h5>
-              <canvas
-                id="topSellingProduct"
-                class="mx-auto"
-                style="max-width: 140px"
-              ></canvas>
-              <div class="d-flex mt-3">
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #9825bf;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Premium</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-2">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #6375c9;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Square</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-2">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #f6cc7b;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Square</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end chart2  -->
         <!-- chart3-->
         <div class="row mt-3">
           <!-- Leads Overview -->
-          <div class="col-md-4 mt-3 mt-md-0">
+          <div class="col-md-4">
             <div class="card h-100 p-4">
               <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
                 Leads Overview
@@ -662,7 +394,7 @@
           </div>
 
           <!-- New Leads -->
-          <div class="col-md-8 mt-3 mt-md-0">
+          <div class="col-md-8">
             <div class="card h-100 p-4">
               <h5 class="body_inter1_regular color1">New Leads</h5>
               <div id="newLeads"></div>
@@ -696,8 +428,307 @@
           </div>
         </div>
         <!-- end chart3 -->
+        <!-- Tabel -->
+        <div class="card p-4 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="body_inter1_regular color1">Order Details</h5>
+            <div class="d-flex">
+              <select name="" id="" class="form-control form-select mr-3 px-3">
+                <option value="" disabled>Status</option>
+                <option value="">Pending</option>
+                <option value="">Processing</option>
+                <option value="">Shipped</option>
+                <option value="">Delivered</option>
+                <option value="">Cancel</option>
+              </select>
+              <a
+                href="#"
+                class="btn btn-outlined-color1 body_inter3_regular color2 px-3 dropdown-toggle"
+                id="exportDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center h-100">
+                  <i class="bi bi-download mr-2"></i>
+                  Export
+                </div>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="exportDropdown">
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportPDF"
+                  ><img src="../icon/pdf.png" alt="" class="mr-3" srcset="" />
+                  PDF</a
+                >
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportExcel"
+                >
+                  <img src="../icon/excel.png" alt="" class="mr-3" /> EXCEL</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive mt-3">
+            <table id="tabel-data" class="table">
+              <thead class="color1 bgcolor2">
+                <tr>
+                  <th scope="col">DATE</th>
+                  <th scope="col">CUSTOMER</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">PHONE</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">ACTION</th>
+                </tr>
+              </thead>
+              <tbody class="color2">
+                <tr>
+                  <td scope="row">10/12/2024</td>
+                  <td>Dita Putri</td>
+                  <td>dita@gmail.com</td>
+                  <td>086753676527</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #6375c9"
+                    >
+                      New Lead
+                    </div>
+                  </td>
+                  <td>
+                    <a
+                      href=""
+                      id="deleteButton"
+                      class="deleteButton color2 mx-2"
+                      style="font-size: 20px"
+                    >
+                      <i class="bi bi-trash text-danger"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">10/12/2024</td>
+                  <td>Dita Putri</td>
+                  <td>dita@gmail.com</td>
+                  <td>086753676527</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #6375c9"
+                    >
+                      New Lead
+                    </div>
+                  </td>
+                  <td>
+                    <a
+                      href=""
+                      id="deleteButton"
+                      class="deleteButton color2 mx-2"
+                      style="font-size: 20px"
+                    >
+                      <i class="bi bi-trash text-danger"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Tabel -->
       </div>
     </div>
+    <!-- Modal view -->
+    <div
+      class="modal fade"
+      id="detailModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="detailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close ml-auto mr-4 mt-4 color1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="text-center body_inter1_regular color1">Lead Details</div>
+          <div class="modal-body">
+            <div class="card-border1">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Name:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalCustomer"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Email:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEmail"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Phone:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalPhone"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Source</label>
+                <label for="" class="body_inter3_regular" id=""
+                  >Instagram, Website</label
+                >
+              </div>
+            </div>
+            <div class="card-border2 mt-3">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Date of entry:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalDate"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Status:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalStatus"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular"
+                  >Last interaction:</label
+                >
+                <label for="" class="body_inter3_regular" id=""
+                  >Follow up by email</label
+                >
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Notes:</label>
+                <label for="" class="body_inter3_regular" id=""
+                  >“Tertarik pada paket A”</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal edit -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close ml-auto mr-4 mt-4 color1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="text-center body_inter1_regular color1">Lead Details</div>
+          <div class="modal-body">
+            <div class="card-border1">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Name:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditCustomer"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Email:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditEmail"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Phone:</label>
+                <label
+                  for=""
+                  class="body_inter3_regular"
+                  id="modalEditPhone"
+                ></label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular">Source</label>
+                <label for="" class="body_inter3_regular" id=""
+                  >Instagram, Website</label
+                >
+              </div>
+            </div>
+            <div class="card-border2 my-3">
+              <div class="d-flex justify-content-between">
+                <label for="" class="body_inter3_regular color2 mt-2"
+                  >Status</label
+                >
+                <select name="" id="" class="form-select w-75">
+                  <option value="">New Lead</option>
+                  <option value="">In Progress</option>
+                  <option value="">Follow Up</option>
+                  <option value="">Won</option>
+                  <option value="">Lost</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button
+                class="btn btn-color2 body_inter2_regular"
+                style="padding-left: 30px; padding-right: 30px"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                Cancel
+              </button>
+              <a
+                href=""
+                class="btn btn-color1 body_inter2_regular"
+                style="padding-left: 30px; padding-right: 30px"
+                >Save</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Page Content End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
@@ -705,109 +736,12 @@
     <script src="sidebar-02/js/popper.js"></script>
     <script src="sidebar-02/js/bootstrap.min.js"></script>
     <script src="sidebar-02/js/main.js"></script>
-    <!-- Statur Order Cart -->
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      // Donut Chart for Status Order
-      const statusOrderCtx = document
-        .getElementById("statusOrderChart")
-        .getContext("2d");
-      new Chart(statusOrderCtx, {
-        type: "doughnut",
-        data: {
-          labels: ["Processing", "Pending", "Shipped", "Cancelled"],
-          datasets: [
-            {
-              data: [30, 20, 40, 10],
-              backgroundColor: ["#0d6efd", "#ffc107", "#198754", "#dc3545"],
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              display: false,
-            },
-            tooltip: {
-              callbacks: {
-                label: function (tooltipItem) {
-                  const data = tooltipItem.dataset.data;
-                  const value = data[tooltipItem.dataIndex];
-                  const total = data.reduce((acc, cur) => acc + cur, 0);
-                  const percentage = ((value / total) * 100).toFixed(2); // Menghitung persen
-                  return ` ${percentage}%`;
-                },
-              },
-            },
-          },
-        },
-      });
-
-      // Area Chart for Business Overview
-    </script>
-    <!-- Business  -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        new ApexCharts(document.querySelector("#businessOverview"), {
-          series: [
-            {
-              name: "Revenue",
-              data: [100, 180, 90, 120, 70, 75, 54],
-            },
-            {
-              name: "Sale",
-              data: [45, 38, 55, 62, 134, 92, 114],
-            },
-          ],
-          chart: {
-            height: 200,
-            type: "area",
-            toolbar: {
-              show: false,
-            },
-          },
-          markers: {
-            size: 0, // Menghilangkan marker (lingkaran kecil)
-          },
-          colors: ["#2eca6a", "#ff5c5c"], // Hijau untuk Sales dan Merah untuk Revenue
-          fill: {
-            type: "gradient",
-            gradient: {
-              shadeIntensity: 1,
-              opacityFrom: 1,
-              opacityTo: 0.6, // Menuju putih
-              stops: [0, 100], // Gradient penuh dari awal ke akhir
-            },
-          },
-          dataLabels: {
-            enabled: false,
-          },
-          stroke: {
-            curve: "smooth",
-            width: 0.2,
-          },
-          xaxis: {
-            type: "category", // Ubah ke category
-            categories: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-          },
-          yaxis: {
-            labels: {
-              formatter: function (value) {
-                return value + " JT"; // Menambahkan 'JT' di label sumbu Y
-              },
-            },
-          },
-          tooltip: {
-            y: {
-              formatter: function (value) {
-                return value + " JT"; // Menambahkan 'JT' di samping angka
-              },
-            },
-          },
-          legend: {
-            show: false, // Menghilangkan legend
-          },
-        }).render();
+      $(document).ready(function () {
+        $("#tabel-data").DataTable();
       });
     </script>
     <!-- new Customer -->
@@ -1026,101 +960,6 @@
         }).render();
       });
     </script>
-    <!-- Order Statistik -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        new ApexCharts(document.querySelector("#orderStatistik"), {
-          series: [
-            {
-              name: "Order",
-              data: [45, 134, 78, 56, 38, 114],
-            },
-          ],
-          chart: {
-            height: 200,
-            type: "area",
-            toolbar: {
-              show: false,
-            },
-          },
-          markers: {
-            size: 0, // Menghilangkan marker (lingkaran kecil)
-          },
-          colors: ["#3A4DE9"], // Hijau untuk Sales dan Merah untuk Revenue
-          fill: {
-            type: "gradient",
-            gradient: {
-              shadeIntensity: 1,
-              opacityFrom: 1,
-              opacityTo: 0.6, // Menuju putih
-              stops: [0, 100], // Gradient penuh dari awal ke akhir
-            },
-          },
-          dataLabels: {
-            enabled: false,
-          },
-          stroke: {
-            curve: "smooth",
-            width: 0.2,
-          },
-          xaxis: {
-            type: "tahun", // Ubah ke category
-            categories: ["2019", "2020", "2021", "2022", "2023", "2024"],
-          },
-          yaxis: {
-            show: false,
-          },
-          tooltip: {
-            y: {
-              formatter: function (value) {
-                return value; // Menambahkan 'JT' di samping angka
-              },
-            },
-          },
-          legend: {
-            show: false, // Menghilangkan legend
-          },
-        }).render();
-      });
-    </script>
-    <!-- Top Selling Product -->
-    <script>
-      // Donut Chart for Status Order
-      const topSellingProduct = document
-        .getElementById("topSellingProduct")
-        .getContext("2d");
-      new Chart(topSellingProduct, {
-        type: "doughnut",
-        data: {
-          labels: ["Premium", "Square", "Instant"],
-          datasets: [
-            {
-              data: [30, 20, 40],
-              backgroundColor: ["#F6CC7B", "#6375C9", "#9825BF"],
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              display: false,
-            },
-            tooltip: {
-              callbacks: {
-                label: function (tooltipItem) {
-                  const data = tooltipItem.dataset.data;
-                  const value = data[tooltipItem.dataIndex];
-                  const total = data.reduce((acc, cur) => acc + cur, 0);
-                  const percentage = ((value / total) * 100).toFixed(2); // Menghitung persen
-                  return ` ${percentage}%`;
-                },
-              },
-            },
-          },
-        },
-      });
-    </script>
     <!-- Leads Overview -->
     <script>
       // Donut Chart for Status Order
@@ -1231,6 +1070,94 @@
         const today = new Date();
         const formattedDate = today.toISOString().split("T")[0]; // Format menjadi yyyy-mm-dd
         dateInput.value = formattedDate;
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".deleteButton").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          Swal.fire({
+            title: "Are you sure?",
+            html: '<span class="body_inter2_regular color2">You will not be able to recover this file</span>',
+            icon: "warning",
+            iconColor: "red",
+            showCancelButton: true,
+            confirmButtonText: "Yes, delete it!",
+            customClass: {
+              title: "headlines5_regular color1",
+              content: "body_inter2_regular color2",
+              confirmButton: "btn-color2 body_inter2_regular",
+              cancelButton: "btn-color1 body_inter2_regular",
+            },
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Lakukan aksi penghapusan di sini, misalnya panggil fungsi atau AJAX
+              Swal.fire({
+                title: "Deleted!",
+                html: '<span class="body_inter2_regular color2">Your item has been deleted</span>',
+                icon: "success",
+                customClass: {
+                  title: "headlines5_regular color1",
+                  content: "body_inter2_regular color2",
+                  confirmButton: "btn-color2 body_inter2_regular",
+                  cancelButton: "btn-color1 body_inter2_regular",
+                },
+              }).then(() => {});
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".bi-eye").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Ambil data dari baris tabel yang diklik
+          const row = this.closest("tr");
+          const date = row.cells[0].innerText;
+          const customer = row.cells[1].innerText;
+          const email = row.cells[2].innerText;
+          const phone = row.cells[3].innerText;
+          const status = row.cells[4].innerText.trim();
+
+          // Isi modal dengan data
+          document.getElementById("modalDate").innerText = date;
+          document.getElementById("modalCustomer").innerText = customer;
+          document.getElementById("modalEmail").innerText = email;
+          document.getElementById("modalPhone").innerText = phone;
+          document.getElementById("modalStatus").innerText = status;
+
+          // Tampilkan modal
+          const detailModal = new bootstrap.Modal(
+            document.getElementById("detailModal")
+          );
+          detailModal.show();
+        });
+      });
+
+      document.querySelectorAll(".bi-pencil-square").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Ambil data dari baris tabel yang diklik
+          const row = this.closest("tr");
+          const customer = row.cells[1].innerText;
+          const email = row.cells[2].innerText;
+          const phone = row.cells[3].innerText;
+
+          // Isi modal dengan data
+          document.getElementById("modalEditCustomer").innerText = customer;
+          document.getElementById("modalEditEmail").innerText = email;
+          document.getElementById("modalEditPhone").innerText = phone;
+
+          // Tampilkan modal
+          const editModal = new bootstrap.Modal(
+            document.getElementById("editModal")
+          );
+          editModal.show();
+        });
       });
     </script>
   </body>

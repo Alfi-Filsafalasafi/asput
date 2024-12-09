@@ -96,7 +96,7 @@
         >
           <!-- Bagian Dashboard -->
           <h5 class="headlines5_regular color1 order-0 d-none d-md-block">
-            E-COMMERCE
+            BLOG
           </h5>
 
           <!-- Bagian Konten di atas Dashboard -->
@@ -236,133 +236,67 @@
 
           <!-- Bagian Dashboard untuk layar besar -->
           <h5 class="headlines5_regular color1 order-0 d-block d-md-none">
-            DASHBOARD
+            BLOG
           </h5>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-md-8">
-            <div
-              class="input-group mb-3"
-              style="border-bottom: 1px solid #664242"
-            >
-              <input
-                type="text"
-                class="form-control search-input"
-                placeholder="Search"
-              />
-              <div class="input-group-append d-flex align-items-center pe-3">
-                <i
-                  class="fa-solid fa-magnifying-glass color1"
-                  style="font-size: 10px"
-                ></i>
+        <!-- Add Blog -->
+        <!-- content -->
+        <section id="isi_blog" class="py-md-5 position-relative">
+          <div class="container">
+            <span class="body_inter3_regular color2">Blog</span>
+            <span class="body_inter3_regular color2 mx-2"> ></span>
+            <span class="body_inter3_regular color2">Add Blog</span>
+            <div class="row mt-5 justify-content-center">
+              <div class="col-12">
+                <label for="" class="body_inter1_regular color1">Title</label>
+                <input
+                  type="text"
+                  class="form-input w-100 mb-4"
+                  placeholder="Enter Blog Title"
+                />
+                <label for="" class="body_inter1_regular color1">Image</label>
+                <div class="upload-area" id="uploadArea">
+                  <div id="uploadText">
+                    <i class="bi bi-upload" style="font-size: 32px"></i>
+                    <div class="body_inter3_regular">
+                      Click to upload or drag and drop
+                    </div>
+                  </div>
+                  <input
+                    type="file"
+                    id="imageUpload"
+                    class="form-control-file d-none"
+                    accept="image/*"
+                  />
+                  <img id="imagePreview" alt="Preview" />
+                </div>
+                <label for="" class="body_inter1_regular color1">Content</label>
+                <textarea
+                  name=""
+                  id=""
+                  rows="7"
+                  class="form-input w-100 mb-4"
+                  placeholder="Write your blog content..."
+                ></textarea>
+                <div class="d-flex justify-content-end">
+                  <a
+                    href="blog.html"
+                    class="btn btn-color2 body_inter2_regular color1 py-2 px-5 mr-4"
+                    >Cancel</a
+                  >
+                  <a
+                    href="blog.html"
+                    class="btn btn-color1 body_inter2_regular color3 py-2 px-5"
+                    >Save</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="d-flex">
-              <select name="" id="" class="form-control form-select">
-                <option value="">Accessories</option>
-                <option value="">Bags</option>
-                <option value="">Clothing</option>
-                <option value="">Inner</option>
-                <option value="">Instant</option>
-                <option value="">Mukena</option>
-                <option value="">Premium</option>
-                <option value="">Square</option>
-                <option value="">Sunglasses</option>
-                <option value="" selected>Sold</option>
-              </select>
-              <span class="mx-1"></span>
-              <a
-                href="e-commerce-add.html"
-                class="btn-color2 body_inter3_regular color1"
-                style="width: 315px"
-              >
-                <div class="d-flex h-100 align-items-center px-1">
-                  <i class="bi bi-plus mr-3" style="font-size: 20px"></i>
-                  <span>Add New Product</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product -->
-        <div class="row g-4" id="newThisWeek">
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/1.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Longpad Misty Hijab Instant</p>
-              <p>Inner</p>
-              <p>IDR 40.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/2.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Rachel Air Lite Mukena</p>
-              <p>Mukena</p>
-              <p>IDR 167.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/3.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Rachel Air Lite Mukena</p>
-              <p>Mukena</p>
-              <p>IDR 167.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/4.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Puffy Totebag Canvas</p>
-              <p>Bags</p>
-              <p>IDR 70.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/5.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Puffy Totebag Canvas</p>
-              <p>Bags</p>
-              <p>IDR 70.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/6.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Prime Sunglasess</p>
-              <p>Sunglasess</p>
-              <p>IDR 100.000</p>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
-            <a href="" class="text-link">
-              <img src="img/7.jpg" class="w-100 mb-3" alt="" srcset="" />
-              <p>Prime Sunglasess</p>
-              <p>Sunglasess</p>
-              <p>IDR 100.000</p>
-            </a>
-          </div>
-        </div>
-        <div class="pagination-container">
-          <a href="#" class="pagination-item active" data-page="1">1</a>
-          <a href="e-commerce2.html" class="pagination-item" data-page="2">2</a>
-          <a href="#" class="pagination-item" data-page="3">3</a>
-          <a href="#" class="pagination-item" data-page="4">4</a>
-          <a href="#" class="pagination-item" data-page="5">5</a>
-          <a href="#" class="pagination-item" data-page="6">6</a>
-          <a href="#" class="pagination-item" data-page="7">7</a>
-          <a href="#" class="pagination-item" data-page="8">8</a>
-          <a href="#" class="pagination-item" data-page="9">9</a>
-          <a href="#" class="pagination-item" data-page="10">10</a>
-          <a href="#" class="pagination-item" data-page="11">11</a>
-          <a href="#" class="pagination-item" id="next-page">&gt;</a>
-          <a href="#" class="pagination-item" id="last-page">Last</a>
-        </div>
-        <!-- End Product -->
+        </section>
+        <!-- end content -->
+        <!-- End Add Blog -->
       </div>
     </div>
     <!-- Page Content End -->
@@ -371,5 +305,56 @@
     <script src="sidebar-02/js/popper.js"></script>
     <script src="sidebar-02/js/bootstrap.min.js"></script>
     <script src="sidebar-02/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const uploadArea = document.getElementById("uploadArea");
+      const imageInput = document.getElementById("imageUpload");
+      const imagePreview = document.getElementById("imagePreview");
+      const uploadText = document.getElementById("uploadText");
+
+      uploadArea.addEventListener("click", () => {
+        imageInput.click();
+      });
+
+      uploadArea.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        uploadArea.style.backgroundColor = "#f0f0f0";
+      });
+
+      uploadArea.addEventListener("dragleave", () => {
+        uploadArea.style.backgroundColor = "";
+      });
+
+      uploadArea.addEventListener("drop", (e) => {
+        e.preventDefault();
+        uploadArea.style.backgroundColor = "";
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith("image/")) {
+          displayImage(file);
+          imageInput.files = e.dataTransfer.files;
+        } else {
+          alert("Please upload a valid image file.");
+        }
+      });
+
+      imageInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file && file.type.startsWith("image/")) {
+          displayImage(file);
+        } else {
+          alert("Please upload a valid image file.");
+        }
+      });
+
+      function displayImage(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          imagePreview.src = e.target.result;
+          imagePreview.style.display = "block";
+          uploadText.style.display = "none"; // Sembunyikan teks setelah gambar diunggah
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
   </body>
 </html>

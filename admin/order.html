@@ -57,7 +57,7 @@
               >
             </li>
             <li class="my-1 active">
-              <a href="#" class="body2_regular color1 py-3">ORDER</a>
+              <a href="order.html" class="body2_regular color1 py-3">ORDER</a>
             </li>
             <li class="my-1">
               <a href="#" class="body2_regular color1 py-3">TRACKING</a>
@@ -68,7 +68,7 @@
               >
             </li>
             <li class="my-1">
-              <a href="#" class="body2_regular color1 py-3">CRM</a>
+              <a href="crm.html" class="body2_regular color1 py-3">CRM</a>
             </li>
             <li class="my-1">
               <a href="#" class="body2_regular color1 py-3">BLOG</a>
@@ -311,7 +311,7 @@
             </div>
           </div>
           <!-- Top Selling Product -->
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3 mt-md-0">
             <div class="card h-100 p-4">
               <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
                 Top Selling Product
@@ -379,14 +379,34 @@
                 <option value="">Cancel</option>
               </select>
               <a
-                href=""
-                class="btn btn-outlined-color1 body_inter3_regular color2 px-3"
+                href="#"
+                class="btn btn-outlined-color1 body_inter3_regular color2 px-3 dropdown-toggle"
+                id="exportDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
                 <div class="d-flex align-items-center h-100">
                   <i class="bi bi-download mr-2"></i>
                   Export
                 </div>
               </a>
+              <div class="dropdown-menu" aria-labelledby="exportDropdown">
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportPDF"
+                  ><img src="../icon/pdf.png" alt="" class="mr-3" srcset="" />
+                  PDF</a
+                >
+                <a
+                  class="dropdown-item body_inter3_regular color2"
+                  href="#"
+                  id="exportExcel"
+                >
+                  <img src="../icon/excel.png" alt="" class="mr-3" /> EXCEL</a
+                >
+              </div>
             </div>
           </div>
           <div class="table-responsive mt-3">
