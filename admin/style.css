@@ -53,7 +53,7 @@
 }
 .body_inter3_regular{
     font-family: "Inter", sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 20px;
 }
@@ -83,7 +83,15 @@
     background: #746770;
     color: white;
 }
-
+.form-select{
+    border: 1px solid #746770;
+    border-radius: 0;
+    padding: 5px 12px;
+    box-shadow: none;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: #746770;
+}
 .btn-submit {
     padding: 8px 51px 8px 51px;
     gap: 10px;
@@ -98,10 +106,20 @@
         color: white;
 }
 
-.btn-color1{
+.btn-color1, .btn-color1:hover{
     color : white;
     border-radius: 0;
     background: #664242;
+}
+
+.btn-color2{
+    color : #664242;
+    border-radius: 0;
+    background: #D0BCB1;
+}
+.btn-color2:hover{
+    background: #746770;
+    color: white;
 }
 
 .btn-outlined-color1{
@@ -137,6 +155,179 @@
     box-shadow: 0 1px 4px #0C0C0D0D;
     border: 1px solid #E8E8E8;
 }
+
+.badge {
+    border-radius: 30px;
+    width: 96px;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #746770;
+  border-radius: 0px;
+  color: #746770;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_length select:focus {
+  outline: none;
+  color: #746770;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #664242;
+    background-color: #746770;
+    border-color: #746770;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #664242;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .pagination-container {
+      margin-top: 0px;
+    margin-bottom: 50px;
+    }
+  }
+  .pagination-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #746770;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    
+    text-decoration: none;
+  }
+  .pagination-item.active {
+    background-color: #D0BCB1;
+  }
+  .pagination-item:hover {
+    background-color: #dfc5b5;
+  }
+
+  #newThisWeek h1{
+    font-size: 55px;
+    font-family: "Mrs Saint Delafield", cursive;
+    color: #664242;
+font-size: 61px;
+font-weight: 400;
+line-height: 79.3px;
+text-align: center;
+
+}
+#newThisWeek p{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+font-weight: 400;
+line-height: 20px;
+color: #746770;
+
+}
+
+#newThisWeek h6{
+  font-family: "Baskervville", serif;
+color: #664242;
+font-size: 13px;
+font-weight: 400;
+line-height: 18.2px;
+
+}
+
+#detail span{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #746770;
+}
+#detail p{
+    border: 1px solid #746770;
+    padding: 22px;
+    font-family: "Inter", sans-serif;
+font-size: 12px;
+color: #746770;
+}
+
+#detail h6{
+  color: #746770;
+  font-weight: 400;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+
+}
+#detail h3{
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+font-family: "Baskervville", serif;
+color: #664242;
+}
+
+#detail table label {
+  font-family: "Inter", sans-serif;
+  color: #746770;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+  }
+  .quantity-selector button {
+    width: 40px;
+    height: 40px;
+    background-color: #746770; /* Purple shade */
+    color: #E9DCD6;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .quantity-selector input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #746770;
+    border-radius: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-family: "Inter", sans-serif;
+    height: 40px;
+  }
+
 
 .color1{
     color:#664242;

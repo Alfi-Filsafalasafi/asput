@@ -25,6 +25,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Tambahkan script ini di <head> -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -46,11 +51,13 @@
             <a href="index.html" class="headlines3_regular color1">asput.</a>
           </h1>
           <ul class="list-unstyled components mb-5">
-            <li class="my-1 active">
-              <a href="#" class="body2_regular color1 py-3">DASHBOARD</a>
-            </li>
             <li class="my-1">
-              <a href="order.html" class="body2_regular color1 py-3">ORDER</a>
+              <a href="dashboard.html" class="body2_regular color1 py-3"
+                >DASHBOARD</a
+              >
+            </li>
+            <li class="my-1 active">
+              <a href="#" class="body2_regular color1 py-3">ORDER</a>
             </li>
             <li class="my-1">
               <a href="#" class="body2_regular color1 py-3">TRACKING</a>
@@ -89,7 +96,7 @@
         >
           <!-- Bagian Dashboard -->
           <h5 class="headlines5_regular color1 order-0 d-none d-md-block">
-            DASHBOARD
+            ORDER
           </h5>
 
           <!-- Bagian Konten di atas Dashboard -->
@@ -234,7 +241,7 @@
         </div>
 
         <div class="row mt-5">
-          <div class="col-md-10">
+          <div class="col-md-8">
             <div
               class="input-group mb-3"
               style="border-bottom: 1px solid #664242"
@@ -252,256 +259,25 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2">
-            <input
-              type="date"
-              class="form-control form-input-date bgcolor2 pr-3"
-              name=""
-              id="dateInput"
-            />
-          </div>
-        </div>
-
-        <!-- card -->
-        <div class="row mt-3">
-          <div class="col-md-6 col-lg-3">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Visit</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">3000</span>
-                <i
-                  class="bi bi-people-fill"
-                  style="font-size: 40px; color: #6375c9"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-success"
-                ><i class="bi bi-arrow-up-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Revenue</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">25JT</span>
-                <i
-                  class="bi bi-coin"
-                  style="font-size: 40px; color: #2aab78"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-danger"
-                ><i class="bi bi-arrow-down-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Order</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">12K</span>
-                <i
-                  class="bi bi-journal-text"
-                  style="font-size: 40px; color: #fcdc3b"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-success"
-                ><i class="bi bi-arrow-up-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card py-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Order</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-between color1"
-              >
-                <span for="" class="inter5_regular">18K</span>
-                <i
-                  class="bi bi-cart"
-                  style="font-size: 40px; color: #c41e3a"
-                ></i>
-              </div>
-              <span class="body_inter3_regular text-danger"
-                ><i class="bi bi-arrow-down-short" style="font-size: 16px"></i
-                >-30% since last month</span
-              >
-            </div>
-          </div>
-        </div>
-        <!-- end card -->
-
-        <!-- chart -->
-        <div class="row mt-3">
-          <!-- Status Order -->
           <div class="col-md-4">
-            <div class="card h-100 p-4">
-              <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
-                Status Order
-              </h5>
-              <canvas
-                id="statusOrderChart"
-                class="mx-auto"
-                style="max-width: 140px"
-              ></canvas>
-              <div class="d-flex justify-content-around mt-5">
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Processing</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="bg-success mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Shipped</span>
-                  </div>
-                </div>
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-warning mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Pending</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="bg-danger mr-3"
-                      style="height: 20px; width: 20px; border-radius: 50%"
-                    ></div>
-                    <span class="body_inter3_regular color1"> Cancelled</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Business Overview -->
-          <div class="col-md-8">
-            <div class="card h-100 p-4">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="body_inter1_regular color1">Business Overview</h5>
-                <div class="btn-group mb-3" role="group">
-                  <button
-                    type="button"
-                    class="btn btn-color1 body_inter3_regular"
-                  >
-                    Weekly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Monthly
-                  </button>
-                  <button
-                    type="button "
-                    class="btn btn-outlined-color1 body_inter3_regular"
-                  >
-                    Yearly
-                  </button>
-                </div>
-              </div>
-
-              <div id="businessOverview" style=""></div>
-
-              <div class="d-flex justify-content-center">
-                <div class="d-flex align-items-center">
-                  <div
-                    class="bg-success ml-4 mr-2"
-                    style="height: 20px; width: 20px; border-radius: 50%"
-                  ></div>
-                  <span class="body_inter3_regular color1"> Revenue</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <div
-                    class="bg-danger ml-4 mr-2"
-                    style="height: 20px; width: 20px; border-radius: 50%"
-                  ></div>
-                  <span class="body_inter3_regular color1"> Sale</span>
-                </div>
-              </div>
+            <div class="d-flex">
+              <input
+                type="date"
+                class="form-control form-input-date bgcolor2 pr-3"
+                name=""
+                id="dateInput"
+              />
+              <span class="mx-1"></span>
+              <input
+                type="date"
+                class="form-control form-input-date bgcolor2 pr-3"
+                name=""
+                id="dateInputEnd"
+              />
             </div>
           </div>
         </div>
-        <!-- end chart -->
 
-        <!-- card ke 2 -->
-        <div class="row mt-3">
-          <div class="col-md-6 col-lg-4">
-            <div class="card pt-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >New Customer</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-start color1"
-              >
-                <i
-                  class="bi bi-people-fill"
-                  style="font-size: 40px; color: #2aab78"
-                ></i>
-                <span for="" class="inter5_regular ml-4">2000</span>
-              </div>
-              <div id="newCustomer" style="margin-top: -80px"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card pt-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >New Register</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-start color1"
-              >
-                <i
-                  class="bi bi-r-circle"
-                  style="font-size: 40px; color: #6375c9"
-                ></i>
-                <span for="" class="inter5_regular ml-4">500</span>
-              </div>
-              <div id="newRegister" style="margin-top: -80px"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card pt-3 px-4">
-              <span for="" class="body_inter1_regular color1 color1"
-                >Total Customer</span
-              >
-              <div
-                class="d-flex align-items-center justify-content-start color1"
-              >
-                <i
-                  class="bi bi-graph-up-arrow"
-                  style="font-size: 40px; color: #fcdc3b"
-                ></i>
-                <span for="" class="inter5_regular ml-4">20K</span>
-              </div>
-              <div id="totalCustomer" style="margin-top: -80px"></div>
-            </div>
-          </div>
-        </div>
-        <!-- end card -->
         <!-- chart 2 -->
         <div class="row mt-3">
           <!-- Order Statistik -->
@@ -589,120 +365,319 @@
           </div>
         </div>
         <!-- end chart2  -->
-        <!-- chart3-->
-        <div class="row mt-3">
-          <!-- Leads Overview -->
-          <div class="col-md-4">
-            <div class="card h-100 p-4">
-              <h5 class="body_inter1_regular color1 text-center mt-2 mb-3">
-                Leads Overview
-              </h5>
-              <canvas
-                id="leadsOverviewChart"
-                class="mx-auto"
-                style="max-width: 140px"
-              ></canvas>
-              <div class="d-flex justify-content-around mt-5">
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #ff602c;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Shopee</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #f3159e;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Instagram</span>
-                  </div>
+        <!-- Tabel -->
+        <div class="card p-4 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="body_inter1_regular color1">Order Details</h5>
+            <div class="d-flex">
+              <select name="" id="" class="form-control form-select mr-3 px-3">
+                <option value="" disabled>Status</option>
+                <option value="">Pending</option>
+                <option value="">Processing</option>
+                <option value="">Shipped</option>
+                <option value="">Delivered</option>
+                <option value="">Cancel</option>
+              </select>
+              <a
+                href=""
+                class="btn btn-outlined-color1 body_inter3_regular color2 px-3"
+              >
+                <div class="d-flex align-items-center h-100">
+                  <i class="bi bi-download mr-2"></i>
+                  Export
                 </div>
-                <div class="d-block">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #746770;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Tiktok</span>
-                  </div>
-                  <div class="d-flex align-items-center mt-3">
-                    <div
-                      class="mr-3"
-                      style="
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #e79c9c;
-                      "
-                    ></div>
-                    <span class="body_inter3_regular color1"> Website</span>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
-
-          <!-- New Leads -->
-          <div class="col-md-8">
-            <div class="card h-100 p-4">
-              <h5 class="body_inter1_regular color1">New Leads</h5>
-              <div id="newLeads"></div>
-              <div class="d-flex justify-content-center">
-                <div class="d-flex align-items-center">
-                  <div
-                    class="ml-4 mr-2"
-                    style="
-                      height: 20px;
-                      width: 20px;
-                      border-radius: 50%;
-                      background: #6375c9;
-                    "
-                  ></div>
-                  <span class="body_inter3_regular color1"> Paid</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <div
-                    class="ml-4 mr-2"
-                    style="
-                      height: 20px;
-                      width: 20px;
-                      border-radius: 50%;
-                      background: #f6cc7b;
-                    "
-                  ></div>
-                  <span class="body_inter3_regular color1"> Organic</span>
-                </div>
-              </div>
-            </div>
+          <div class="table-responsive mt-3">
+            <table id="tabel-data" class="table">
+              <thead class="color1 bgcolor2">
+                <tr>
+                  <th scope="col">ORDER ID</th>
+                  <th scope="col">DATE</th>
+                  <th scope="col">CUSTOMER</th>
+                  <th scope="col">PRICE</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">NO. RESI</th>
+                  <th scope="col">ACTION</th>
+                </tr>
+              </thead>
+              <tbody class="color2">
+                <tr>
+                  <td scope="row">12345</td>
+                  <td>10/12/2024</td>
+                  <td>Dita Putri</td>
+                  <td>Rp 250.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #ff602c"
+                    >
+                      Shipped
+                    </div>
+                  </td>
+                  <td>31077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">12345</td>
+                  <td>10/12/2024</td>
+                  <td>Dita Putri</td>
+                  <td>Rp 250.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #ff602c"
+                    >
+                      Shipped
+                    </div>
+                  </td>
+                  <td>31077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">13456</td>
+                  <td>09/12/2024</td>
+                  <td>Maharani Citra</td>
+                  <td>Rp 350.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #ff602c"
+                    >
+                      Shippped
+                    </div>
+                  </td>
+                  <td>41077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">12345</td>
+                  <td>10/12/2024</td>
+                  <td>Dita Putri</td>
+                  <td>Rp 250.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #ff602c"
+                    >
+                      Shipped
+                    </div>
+                  </td>
+                  <td>31077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">13456</td>
+                  <td>09/12/2024</td>
+                  <td>Maharani Citra</td>
+                  <td>Rp 350.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #ff602c"
+                    >
+                      Shippped
+                    </div>
+                  </td>
+                  <td>41077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">13245</td>
+                  <td>07/12/2024</td>
+                  <td>Putri Zahrafi</td>
+                  <td>Rp 550.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #2aab78"
+                    >
+                      Delivered
+                    </div>
+                  </td>
+                  <td>61077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">14253</td>
+                  <td>03/12/2024</td>
+                  <td>Alya Putri</td>
+                  <td>Rp 950.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #6375c9"
+                    >
+                      Processing
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">13245</td>
+                  <td>07/12/2024</td>
+                  <td>Putri Zahrafi</td>
+                  <td>Rp 550.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #2aab78"
+                    >
+                      Delivered
+                    </div>
+                  </td>
+                  <td>61077N6UBYT</td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">14253</td>
+                  <td>03/12/2024</td>
+                  <td>Alya Putri</td>
+                  <td>Rp 950.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #6375c9"
+                    >
+                      Processing
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">17624</td>
+                  <td>02/12/2024</td>
+                  <td>Salwa Lazia</td>
+                  <td>Rp 150.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #fcdc3b"
+                    >
+                      Pending
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">17685</td>
+                  <td>01/12/2024</td>
+                  <td>Keisha Bella</td>
+                  <td>Rp 800.000</td>
+                  <td>
+                    <div
+                      class="badge body_inter3_regular text-white"
+                      style="background: #c41e3a"
+                    >
+                      Cancelled
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="" class="color2 mx-2" style="font-size: 20px">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <!-- end chart3 -->
+        <!-- End Tabel -->
       </div>
     </div>
     <!-- Page Content End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
     <script src="sidebar-02/js/jquery.min.js"></script>
     <script src="sidebar-02/js/popper.js"></script>
     <script src="sidebar-02/js/bootstrap.min.js"></script>
     <script src="sidebar-02/js/main.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#tabel-data").DataTable();
+      });
+    </script>
+
     <!-- Statur Order Cart -->
     <script>
       // Donut Chart for Status Order
@@ -1226,9 +1201,16 @@
       // Mengatur nilai input tanggal menjadi tanggal hari ini
       document.addEventListener("DOMContentLoaded", () => {
         const dateInput = document.getElementById("dateInput");
+        const dateInputEnd = document.getElementById("dateInputEnd");
         const today = new Date();
         const formattedDate = today.toISOString().split("T")[0]; // Format menjadi yyyy-mm-dd
+
+        const twoDaysLater = new Date();
+        twoDaysLater.setDate(today.getDate() + 2);
+        const formattedEndDate = twoDaysLater.toISOString().split("T")[0];
+
         dateInput.value = formattedDate;
+        dateInputEnd.value = formattedEndDate;
       });
     </script>
   </body>

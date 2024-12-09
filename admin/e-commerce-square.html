@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Asput</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tambahkan script ini di <head> -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <link rel="stylesheet" href="./sidebar-02/css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch bg-white">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="pl-4 pt-5">
+          <h1 class="mb-5">
+            <a href="index.html" class="headlines3_regular color1">asput.</a>
+          </h1>
+          <ul class="list-unstyled components mb-5">
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">DASHBOARD</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">ORDER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">TRACKING</a>
+            </li>
+            <li class="my-1 active">
+              <a href="e-commerce.html" class="body2_regular color1 py-3"
+                >E-COMMERCE</a
+              >
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">CRM</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">BLOG</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">CUSTOMER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">HELP CENTER</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">ROLE</a>
+            </li>
+            <li class="my-1">
+              <a href="#" class="body2_regular color1 py-3">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div
+          class="d-block d-md-flex justify-content-between align-items-center"
+        >
+          <!-- Bagian Dashboard -->
+          <h5 class="headlines5_regular color1 order-0 d-none d-md-block">
+            E-COMMERCE
+          </h5>
+
+          <!-- Bagian Konten di atas Dashboard -->
+          <div
+            class="d-flex align-items-center justify-content-end mb-4 mb-md-0 order-1"
+          >
+            <div class="position-relative">
+              <!-- Cart Icon -->
+              <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="position-relative">
+                  <!-- Cart Icon -->
+                  <i class="bi bi-bell-fill color1" style="font-size: 24px"></i>
+                  <span
+                    class="position-absolute top-0 start-100 bgcolor1"
+                    style="
+                      margin-left: -10px;
+                      margin-top: 6px;
+                      height: 12px;
+                      width: 12px;
+                      border-radius: 50%;
+                      border: 2px solid white;
+                    "
+                  ></span>
+                </div>
+              </a>
+              <div class="dropdown-menu p-3" style="left: auto; width: 378px">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="" class="body_inter3_regular color1"
+                    >5 NEW NOTIFICATIONS</label
+                  >
+                  <a href="#"
+                    ><i class="bi bi-x color1" style="font-size: 24px"></i
+                  ></a>
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-emoji-smile mr-3"
+                      style="color: #fcdc3b; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >Product delivery is complete</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-emoji-smile mr-3"
+                      style="color: #fcdc3b; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >Product delivery is complete</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div
+                  class="d-flex align-items-center justify-content-between py-1"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="bi bi-r-circle mr-3"
+                      style="color: #467edc; font-size: 28px"
+                    ></i>
+                    <label for="" class="body_inter3_regular color2"
+                      >New customer register</label
+                    >
+                  </div>
+                  <label for="" class="body_inter3_regular color2"
+                    >2 min ago</label
+                  >
+                </div>
+                <hr class="m-0 p-0" />
+                <div class="text-center">
+                  <a href="" class="text-center body_inter3_regular color1"
+                    >View All</a
+                  >
+                </div>
+              </div>
+            </div>
+            <label class="body2_regular my-auto mx-3">AULYA SHANDY</label>
+            <div
+              class="circle"
+              style="border-radius: 50%; border: 1px solid #664242"
+            >
+              <i class="bi bi-person color1 mx-2" style="font-size: 20px"></i>
+            </div>
+          </div>
+
+          <!-- Bagian Dashboard untuk layar besar -->
+          <h5 class="headlines5_regular color1 order-0 d-block d-md-none">
+            DASHBOARD
+          </h5>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-8">
+            <div
+              class="input-group mb-3"
+              style="border-bottom: 1px solid #664242"
+            >
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search"
+              />
+              <div class="input-group-append d-flex align-items-center pe-3">
+                <i
+                  class="fa-solid fa-magnifying-glass color1"
+                  style="font-size: 10px"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex">
+              <select name="" id="" class="form-control form-select">
+                <option value="">Accessories</option>
+                <option value="">Bags</option>
+                <option value="">Clothing</option>
+                <option value="">Inner</option>
+                <option value="">Instant</option>
+                <option value="">Mukena</option>
+                <option value="">Premium</option>
+                <option value="" selected>Square</option>
+                <option value="">Sunglasses</option>
+              </select>
+              <span class="mx-1"></span>
+              <a
+                href="e-commerce-add.html"
+                class="btn-color2 body_inter3_regular color1"
+                style="width: 315px"
+              >
+                <div class="d-flex h-100 align-items-center px-1">
+                  <i class="bi bi-plus mr-3" style="font-size: 20px"></i>
+                  <span>Add New Product</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="row g-4" id="newThisWeek">
+          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
+            <a href="" class="text-link">
+              <img
+                src="../img/produk/square/image-2.png"
+                class="w-100 mb-3"
+                alt=""
+                srcset=""
+              />
+              <p>Baby Paris Hijab Square</p>
+              <p>Square</p>
+              <p>IDR 52.000</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-3">
+            <a href="" class="text-link">
+              <img
+                src="../img/produk/square/image-6.png"
+                class="w-100 mb-3"
+                alt=""
+                srcset=""
+              />
+              <p>Baby Paris Hijab Square</p>
+              <p>Square</p>
+              <p>IDR 52.000</p>
+            </a>
+          </div>
+        </div>
+        <div class="pagination-container">
+          <a href="#" class="pagination-item active" data-page="1">1</a>
+          <a href="e-commerce2.html" class="pagination-item" data-page="2">2</a>
+          <a href="#" class="pagination-item" data-page="3">3</a>
+          <a href="#" class="pagination-item" data-page="4">4</a>
+          <a href="#" class="pagination-item" data-page="5">5</a>
+          <a href="#" class="pagination-item" data-page="6">6</a>
+          <a href="#" class="pagination-item" data-page="7">7</a>
+          <a href="#" class="pagination-item" data-page="8">8</a>
+          <a href="#" class="pagination-item" data-page="9">9</a>
+          <a href="#" class="pagination-item" data-page="10">10</a>
+          <a href="#" class="pagination-item" data-page="11">11</a>
+          <a href="#" class="pagination-item" id="next-page">&gt;</a>
+          <a href="#" class="pagination-item" id="last-page">Last</a>
+        </div>
+        <!-- End Product -->
+      </div>
+    </div>
+    <!-- Page Content End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sidebar-02/js/jquery.min.js"></script>
+    <script src="sidebar-02/js/popper.js"></script>
+    <script src="sidebar-02/js/bootstrap.min.js"></script>
+    <script src="sidebar-02/js/main.js"></script>
+  </body>
+</html>
